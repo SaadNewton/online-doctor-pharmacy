@@ -1,0 +1,141 @@
+import 'package:flutter/material.dart';
+
+import 'lab_account_detail.dart';
+import 'lab_detail.dart';
+
+// List profileList = [];
+// List educationList = [];
+// List experienceList = [];
+// List specialityList = [];
+// List scheduleList = [];
+// List<String> getSpecialitiesList = [];
+bool isLabCompleted = false;
+
+class LabProfileWizard extends StatefulWidget {
+  @override
+  _LabProfileWizardState createState() => _LabProfileWizardState();
+}
+
+class _LabProfileWizardState extends State<LabProfileWizard>
+    with SingleTickerProviderStateMixin {
+  TabController? _profileWizardTabController;
+  int _profileWizardTabIndex = 0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+
+    _profileWizardTabController = new TabController(length: 2, vsync: this);
+    // getMethod(
+    //     context, specialitiesListService, null, true, getSpecialityListRepo);
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        FocusScopeNode currentFocus = FocusScope.of(context);
+        if (!currentFocus.hasPrimaryFocus) {
+          currentFocus.unfocus();
+        }
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Lab Profile Wizard'),
+          textTheme: Theme.of(context).textTheme,
+          centerTitle: true,
+        ),
+        body: Container(
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(color: Colors.white),
+          child: Column(
+            children: [
+              Container(
+                height: 53,
+                width: MediaQuery.of(context).size.width * 0.70,
+                decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          offset: Offset(0, 1),
+                          blurRadius: 9,
+                          spreadRadius: 2)
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(5))),
+                child: TabBar(
+                  controller: _profileWizardTabController,
+                  labelColor: Colors.white,
+                  unselectedLabelColor: Colors.black,
+                  labelStyle: Theme.of(context).textTheme.headline5!.copyWith(
+                      fontWeight: FontWeight.w600, color: Colors.white),
+                  indicator: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(5)),
+                      color: Theme.of(context).primaryColor),
+                  tabs: [
+                    Center(
+                      child: new Text(
+                        'Lab Details',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                    Center(
+                      child: new Text(
+                        'Account Detail',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                  ],
+                  onTap: (v) {
+                    print(v.toString());
+                    setState(() {
+                      _profileWizardTabIndex = v;
+                    });
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Expanded(child: viewSelectorMethod(_profileWizardTabIndex))
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  changeView(int index) {
+    setState(() {
+      _profileWizardTabIndex = index;
+      _profileWizardTabController!.index = index;
+    });
+  }
+
+  viewSelectorMethod(int profileTab) {
+    switch (profileTab) {
+      case 0:
+        {
+          return LabDetail(
+            changeView: changeView,
+          );
+        }
+        break;
+      case 1:
+        {
+          return LabAccountDetail(
+            changeView: changeView,
+          );
+        }
+        break;
+    }
+  }
+}

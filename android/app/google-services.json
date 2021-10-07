@@ -1,0 +1,121 @@
+{
+  "project_info": {
+    "project_number": "274090461017",
+    "project_id": "online-doctor-18a73",
+    "storage_bucket": "online-doctor-18a73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274090461017:android:c25b21cbdb755222a8ae48",
+        "android_client_info": {
+          "package_name": "pk.online_doctor.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274090461017-0mo94tt76aneltpdpg5nne4vtlj0gppu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pk.online_doctor.customer",
+            "certificate_hash": "65cf71ad90870318fe53986e29f9f9314ce17446"
+          }
+        },
+        {
+          "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC93hnUvYNFw4X4TReS3KTgLFUcRpIQRpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274090461017:android:cfd94d6fbff239a9a8ae48",
+        "android_client_info": {
+          "package_name": "pk.online_doctor.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274090461017-qg4feqiu496mkjses709hepb8m2ul7b1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pk.online_doctor.doctor",
+            "certificate_hash": "50e62b18997d8cd98380830d5d8571c5fe4c6433"
+          }
+        },
+        {
+          "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC93hnUvYNFw4X4TReS3KTgLFUcRpIQRpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274090461017:android:58695598a2ac2eb5a8ae48",
+        "android_client_info": {
+          "package_name": "pk.online_doctor.pharmacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274090461017-rdr40nks6sggoklmu8muobpv4l82g5rq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pk.online_doctor.pharmacy",
+            "certificate_hash": "559cff3be6c4e3db9572adcb66332a9ac7e4d296"
+          }
+        },
+        {
+          "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC93hnUvYNFw4X4TReS3KTgLFUcRpIQRpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
