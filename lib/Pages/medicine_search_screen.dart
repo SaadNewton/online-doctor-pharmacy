@@ -28,6 +28,9 @@ class _MedicineSearchScreenState extends State<MedicineSearchScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    isItemTypeAvailable = '0';
+    itemTypes = [];
+    itemTypePrice = [];
   }
 
   @override
@@ -166,16 +169,42 @@ class _MedicineSearchScreenState extends State<MedicineSearchScreen> {
                                             medicineSearchModel
                                                 .data[index].name;
                                         quantityControllerEdit.text = '1';
-                                        priceControllerEdit.text =
-                                            medicineSearchModel
-                                                .data[index].salePrice;
 
-                                        // medicineSearchModel
-                                        //             .data[index].isItemType ==
-                                        //         '1'
-                                        //     ? itemTypes = medicineSearchModel
-                                        //         .data[index].itemTypePrice[]
-                                        //     : isItemTypeAvailable = '0';
+                                        medicineSearchModel
+                                                    .data[index].isItemType ==
+                                                '1'
+                                            ? List.generate(
+                                                medicineSearchModel
+                                                    .data[index]
+                                                    .itemPrice
+                                                    .length, (innerIndex) {
+                                                itemTypes.add(
+                                                    medicineSearchModel
+                                                        .data[index]
+                                                        .itemPrice[innerIndex]
+                                                        .type);
+                                              })
+                                            : isItemTypeAvailable = '0';
+
+                                        medicineSearchModel
+                                                    .data[index].isItemType ==
+                                                '1'
+                                            ? List.generate(
+                                                medicineSearchModel
+                                                    .data[index]
+                                                    .itemPrice
+                                                    .length, (innerIndex) {
+                                                itemTypePrice.add(
+                                                    medicineSearchModel
+                                                        .data[index]
+                                                        .itemPrice[innerIndex]
+                                                        .price);
+                                              })
+                                            : isItemTypeAvailable = '0';
+
+                                        selectedValue = itemTypes[2];
+                                        priceControllerEdit.text =
+                                            itemTypePrice[2];
 
                                         Get.back();
                                       },

@@ -73,17 +73,6 @@ class _MyAppState extends State<MyApp> {
         route = message.data['routeApp'];
         Get.toNamed(route);
       }
-
-      // if (message.data['channel'] != null) {
-      //   channelName = message.data['channel'];
-      //
-      //   // Get.toNamed(route,
-      //   //     arguments: JoinChannelVideo(
-      //   //       channelId: channelName,
-      //   //     ));
-      // } else {
-      //   Get.toNamed(route);
-      // }
     });
 
     ///forground messages
@@ -130,13 +119,6 @@ class _MyAppState extends State<MyApp> {
         Get.toNamed(route);
       }
 
-      // if (message.data['channel'] != null) {
-      //   channelName = message.data['channel'];
-      //   // Get.toNamed(route,
-      //   // );
-      // } else {
-      //   // Get.toNamed(route);
-      // }
       LocalNotificationService.display(message);
     });
 
@@ -164,11 +146,8 @@ class _MyAppState extends State<MyApp> {
         const Locale('it'),
         const Locale('sw'),
       ],
-
       theme: appTheme,
       home: SplashScreen(),
-
-      //ChangeLanguagePage()
       routes: {
         '/recentOrders': (context) => RecentOrders(
               tabIndex: 0,

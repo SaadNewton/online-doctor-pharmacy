@@ -1,7 +1,6 @@
 /// base url
 ///
-String baseUrl = 'http://192.168.88.44'
-    ':8000/api/';
+String baseUrl = 'http://192.168.88.44:8000/api/';
 // String baseUrl = 'https://onlinedoctor.softwaresbranding.com/api/';
 
 /// image base url

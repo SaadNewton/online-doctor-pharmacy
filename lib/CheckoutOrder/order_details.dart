@@ -274,7 +274,7 @@ class _OrderInfoState extends State<OrderInfo> {
                               height: 10,
                             ),
                             Text(
-                              '${widget.orderDetailData!.customer!.phone}',
+                              '${widget.orderDetailData!.order!.orderShipping!.phoneNumber}',
                               style: Theme.of(context)
                                   .textTheme
                                   .subtitle1!
@@ -297,7 +297,7 @@ class _OrderInfoState extends State<OrderInfo> {
                               children: [
                                 Expanded(
                                   child: Text(
-                                    '${widget.orderDetailData!.customer!.address} ',
+                                    '${widget.orderDetailData!.order!.orderShipping!.address} ',
                                     style: Theme.of(context)
                                         .textTheme
                                         .subtitle1!

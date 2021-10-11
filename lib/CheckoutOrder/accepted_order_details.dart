@@ -270,7 +270,6 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                             ),
                           )
                         : SizedBox(),
-
                     buildBottomListTile(
                         context,
                         'Sub Total',
@@ -295,12 +294,10 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                         widget.acceptedOrderDetail!.paymentMethod == null
                             ? '--'
                             : '${widget.acceptedOrderDetail!.paymentMethod}'),
-
                     Divider(
                       color: Theme.of(context).backgroundColor,
                       thickness: 8.0,
                     ),
-
                     Padding(
                       padding: const EdgeInsets.only(
                           left: 16.0, right: 16.0, top: 8, bottom: 16.0),
@@ -318,7 +315,7 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                             height: 10,
                           ),
                           Text(
-                            '${widget.acceptedOrderDetail!.customer!.phone}',
+                            '${widget.acceptedOrderDetail!.orderShipping!.phoneNumber}',
                             style: Theme.of(context)
                                 .textTheme
                                 .subtitle1!
@@ -341,7 +338,7 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                             children: [
                               Expanded(
                                 child: Text(
-                                  '${widget.acceptedOrderDetail!.customer!.address}',
+                                  '${widget.acceptedOrderDetail!.orderShipping!.address}',
                                   style: Theme.of(context)
                                       .textTheme
                                       .subtitle1!
@@ -381,7 +378,6 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                         ],
                       ),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20.0, vertical: 16.0),
@@ -495,7 +491,6 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                               },
                             ),
                           ),
-
                     widget.acceptedOrderDetail!.status == 'delivered' ||
                             widget.acceptedOrderDetail!.status == 'in_review' ||
                             widget.acceptedOrderDetail!.status == 'rejected'
@@ -525,50 +520,6 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                     SizedBox(
                       height: 20,
                     )
-                    // Align(
-                    //   alignment: Alignment.bottomCenter,
-                    //   child: Column(
-                    //     mainAxisSize: MainAxisSize.min,
-                    //     children: <Widget>[
-                    //       // Container(
-                    //       //   color: Theme.of(context).scaffoldBackgroundColor,
-                    //       //   child: ListTile(
-                    //       //     leading: FadedScaleAnimation(
-                    //       //       Image.asset(
-                    //       //         'assets/deliveryman.png',
-                    //       //         height: 40,
-                    //       //         width: 40,
-                    //       //       ),
-                    //       //       durationInMilliseconds: 600,
-                    //       //     ),
-                    //       //     title: Text(
-                    //       //       'George Anderson',
-                    //       //       style: Theme.of(context)
-                    //       //           .textTheme
-                    //       //           .subtitle1!
-                    //       //           .copyWith(fontWeight: FontWeight.w500),
-                    //       //     ),
-                    //       //     subtitle: Text(
-                    //       //       locale.deliveryPartnerAssign!,
-                    //       //       style: Theme.of(context)
-                    //       //           .textTheme
-                    //       //           .subtitle2!
-                    //       //           .copyWith(letterSpacing: 0.06),
-                    //       //     ),
-                    //       //     trailing: IconButton(
-                    //       //       onPressed: () {},
-                    //       //       icon: Icon(
-                    //       //         Icons.navigation,
-                    //       //         color: Theme.of(context).primaryColor,
-                    //       //         size: 20.0,
-                    //       //       ),
-                    //       //     ),
-                    //       //   ),
-                    //       // ),
-                    //
-                    //     ],
-                    //   ),
-                    // )
                   ],
                 ),
               ),

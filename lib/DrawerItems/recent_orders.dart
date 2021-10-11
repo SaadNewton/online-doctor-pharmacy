@@ -67,10 +67,6 @@ class _RecentOrdersState extends State<RecentOrders>
     WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
       Get.find<LoaderController>().updateDataController(true);
     });
-
-    // get order requests
-
-    // get accepted orders
   }
 
   checkPharmacyApprovalStatus() {
@@ -127,8 +123,6 @@ class _RecentOrdersState extends State<RecentOrders>
                     leading: IconButton(
                       icon: Icon(Icons.menu),
                       onPressed: () {
-                        // Navigator.
-                        // pushNamed(context, PageRoutes.accountPage);
                         Get.to(AccountPage());
                       },
                     ),

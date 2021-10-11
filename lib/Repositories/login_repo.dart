@@ -84,6 +84,5 @@ getLoginData(
     Get.find<LoaderController>().updateFormController(false);
 
     print('Exception................................. ' + response.toString());
-// Get.find<AppController>().changeServerErrorCheck(true);
   }
 }

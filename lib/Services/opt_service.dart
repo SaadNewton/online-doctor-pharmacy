@@ -17,16 +17,12 @@ otpFunction(String? phone, BuildContext? context) async {
     phoneNumber: phone!,
     timeout: Duration(seconds: 55),
     verificationCompleted: (AuthCredential credential) async {
-      // method();
-
       print('Credential from verificationCompleted ---->> ${credential}');
     },
     verificationFailed: (FirebaseAuthException exception) {
-      // method();
       print('Exception ->>> ${exception.message}');
     },
     codeSent: (String? verificationId, [int? forceResendingToken]) {
-      // method();
       verificationIDForVerify = verificationId;
       log('verificationId -->> ${verificationId}');
     },

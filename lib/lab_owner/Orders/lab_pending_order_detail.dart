@@ -78,36 +78,6 @@ class _LabPendingOrderDetailState extends State<LabPendingOrderDetail> {
                   ],
                 ),
               ),
-
-              // children: [
-              //   RichText(
-              //       text: TextSpan(children: <TextSpan>[
-              //     TextSpan(
-              //         text:
-              //             "${modelController.orderRequestsModel!.data!.data![widget.index].product![index].name}",
-              //         style: Theme.of(context).textTheme.subtitle1),
-              //     TextSpan(
-              //         text:
-              //             '${modelController.orderRequestsModel!.data!.data![widget.index].product![index].qty}',
-              //         style: Theme.of(context)
-              //             .textTheme
-              //             .subtitle2!
-              //             .copyWith(height: 1.8))
-              //   ])),
-              //   SizedBox(
-              //     width: 15,
-              //   ),
-              //   Image.asset(
-              //     'assets/test image.png',
-              //     height: 25,
-              //     width: 25,
-              //   ),
-              //   Spacer(),
-              //   Text(
-              //     '${Get.find<ModelControllers>().orderRequestsModel!.data!.data![widget.index].product![index].salePrice}',
-              //     style: Theme.of(context).textTheme.subtitle1,
-              //   )
-              // ],
             ));
   }
 
@@ -183,19 +153,6 @@ class _LabPendingOrderDetailState extends State<LabPendingOrderDetail> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           ...orderDetailList(context, modelController),
-                          // Container(
-                          //   padding: EdgeInsets.symmetric(
-                          //       horizontal: 15.0, vertical: 8),
-                          //   child: Text(locale.orderedItems!,
-                          //       style: Theme.of(context)
-                          //           .textTheme
-                          //           .subtitle2!
-                          //           .copyWith(
-                          //               color: Theme.of(context).disabledColor,
-                          //               fontSize: 14)),
-                          //   color: Theme.of(context).scaffoldBackgroundColor,
-                          // ),
-                          // ...orderDetailList(context, modelController),
 
                           Divider(
                             color: Theme.of(context).backgroundColor,

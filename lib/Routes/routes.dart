@@ -14,8 +14,6 @@ import 'package:doctoworld_seller/DrawerItems/wallet_page.dart';
 import 'package:doctoworld_seller/Pages/add_address.dart';
 import 'package:doctoworld_seller/Pages/chat_screen.dart';
 import 'package:doctoworld_seller/Pages/edit_item.dart';
-import 'package:doctoworld_seller/Pages/reviews_page.dart';
-import 'package:doctoworld_seller/Pages/send_to_bank.dart';
 import 'package:doctoworld_seller/Pages/track_order.dart';
 import 'package:flutter/material.dart';
 
@@ -50,12 +48,10 @@ class PageRoutes {
       myItemsPage: (context) => MyItemsPage(),
       editItemsPage: (context) => EditItemPage(),
       insightPage: (context) => InsightPage(),
-      reviewsPage: (context) => ReviewPage(),
       earningsPage: (context) => EarningsPage(),
       profilePage: (context) => ProfilePage(),
       addAddress: (context) => AddAddress(),
       walletPage: (context) => WalletPage(),
-      sendToBank: (context) => SendToBankPage(),
       supportPage: (context) => SupportPage(),
       faqPage: (context) => FAQPage(),
       tncPage: (context) => TnCPage(),

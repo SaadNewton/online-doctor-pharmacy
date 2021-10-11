@@ -3,12 +3,6 @@ import 'package:flutter/material.dart';
 import 'lab_account_detail.dart';
 import 'lab_detail.dart';
 
-// List profileList = [];
-// List educationList = [];
-// List experienceList = [];
-// List specialityList = [];
-// List scheduleList = [];
-// List<String> getSpecialitiesList = [];
 bool isLabCompleted = false;
 
 class LabProfileWizard extends StatefulWidget {
@@ -26,8 +20,6 @@ class _LabProfileWizardState extends State<LabProfileWizard>
     // TODO: implement initState
 
     _profileWizardTabController = new TabController(length: 2, vsync: this);
-    // getMethod(
-    //     context, specialitiesListService, null, true, getSpecialityListRepo);
     super.initState();
   }
 

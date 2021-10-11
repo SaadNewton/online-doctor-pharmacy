@@ -11,7 +11,6 @@ import 'package:get/get.dart';
 
 class VerificationUI extends StatefulWidget {
   final getPhone;
-  // bool? registerTheUser;
 
   VerificationUI({this.getPhone});
 
@@ -98,7 +97,6 @@ class _VerificationUIState extends State<VerificationUI> {
                 ),
                 SizedBox(height: 30.0),
                 Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
                       '$_counter' + locale.secLeft!,

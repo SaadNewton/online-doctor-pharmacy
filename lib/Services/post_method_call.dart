@@ -2,7 +2,6 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:dio/dio.dart' as dio_instance;
-// import 'package:dio/dio.dart';
 import 'package:doctoworld_seller/Services/headers.dart';
 import 'package:doctoworld_seller/Services/service_urls.dart';
 import 'package:doctoworld_seller/Storage/local_Storage.dart';
@@ -54,11 +53,9 @@ postMethod(
       } on dio_instance.DioError catch (e) {
         print('Dio Error From Post $apiUrl -->> ${e.response}');
         executionMethod(false, null, context);
-        // messageShowService(response.data,false);
       }
     }
   } on SocketException catch (_) {
-    // Get.find<AppController>().changeInternetCheckerState(false);
     print('Internet Not Connected');
   }
 }

@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 pharmacyApprovalRepo(
     bool responseCheck, Map<String, dynamic> response, BuildContext context) {
   if (responseCheck) {
-    print('aaaaaaaaaaaaaaaaaaaaaaaaaa');
+    print('Pharmacy Approval Repo Called');
     if (response['status']) {
       storageBox!.write('pharmacyApproved', 'true');
       Get.find<LoaderController>().checkPharmacyStatusLoader(true);

@@ -49,7 +49,6 @@ class _EditDetailsState extends State<EditDetails> {
   @override
   void initState() {
     // TODO: implement initState
-    // Get.put(LoaderController());
 
     getUserDetailRepo();
     if (userDetailModel != null) {
@@ -92,8 +91,6 @@ class _EditDetailsState extends State<EditDetails> {
 
   @override
   void dispose() {
-    // _nameController.dispose();
-    // _emailController.dispose();
     super.dispose();
   }
 
@@ -325,12 +322,6 @@ class _EditDetailsState extends State<EditDetails> {
                                   CustomButton(
                                     label: 'Submit',
                                     onTap: () {
-                                      // setState(() {
-                                      //   // if (_image == null) {
-                                      //   //   _imageChecker = true;
-                                      //   // }
-                                      // }
-                                      // );
                                       if (detailKey.currentState!.validate()) {
                                         loaderController
                                             .updateFormController(true);
@@ -393,16 +384,12 @@ class _EditDetailsState extends State<EditDetails> {
       setState(() {
         currentAddress =
             '${place.name}, ${place.subAdministrativeArea}, ${place.administrativeArea}, ${place.country}';
-        // var signUpAddressController;
-        // if (signUpAddressController.text.isEmpty) {
-        //   signUpAddressController.text = currentAddress;
-        // }
+
         print(currentAddress + ' yes');
         print(place.administrativeArea.toString());
         print(place.subAdministrativeArea.toString());
         print(place.thoroughfare.toString());
         print(place.toJson().toString());
-        // FocusScope.of(context).unfocus();
         locationController.text = place.name.toString();
       });
     } catch (e) {
@@ -412,7 +399,6 @@ class _EditDetailsState extends State<EditDetails> {
 
   editPharmacyDetails([File? file]) async {
     print(storageBox!.read('pharmacy_id'));
-    // String fileName = file!.path.split('/').last;
     dio_instance.FormData formData =
         dio_instance.FormData.fromMap(<String, dynamic>{
       'update_id': storageBox!.read('pharmacy_id'),
@@ -426,14 +412,8 @@ class _EditDetailsState extends State<EditDetails> {
       'address': locationController.text,
       'lat': latitude,
       'long': longitude,
-      // 'image': await dio_instance.MultipartFile.fromFile(
-      //   file.path,
-      //   filename: fileName,
-      //   contentType: new MediaType('image', 'jpeg'), //important
-      // )
     });
     dio_instance.Dio dio = dio_instance.Dio();
-    // setCustomHeader(dio, 'Authorization', 'Bearer ${storageBox.read('accessToken')}');
     dio_instance.Response<dynamic> response;
     try {
       response =
@@ -459,7 +439,6 @@ class _EditDetailsState extends State<EditDetails> {
 
   editLabDetails([File? file]) async {
     print(storageBox!.read('pharmacy_id'));
-    // String fileName = file!.path.split('/').last;
     dio_instance.FormData formData =
         dio_instance.FormData.fromMap(<String, dynamic>{
       'update_id': storageBox!.read('lab_id'),
@@ -473,14 +452,8 @@ class _EditDetailsState extends State<EditDetails> {
       'address': locationController.text,
       'lat': latitude,
       'long': longitude,
-      // 'image': await dio_instance.MultipartFile.fromFile(
-      //   file.path,
-      //   filename: fileName,
-      //   contentType: new MediaType('image', 'jpeg'), //important
-      // )
     });
     dio_instance.Dio dio = dio_instance.Dio();
-    // setCustomHeader(dio, 'Authorization', 'Bearer ${storageBox.read('accessToken')}');
     dio_instance.Response<dynamic> response;
     try {
       response = await dio.post(labProfileUpdateWizardService, data: formData);

@@ -43,7 +43,6 @@ class _LabDetailState extends State<LabDetail> {
   @override
   void initState() {
     // TODO: implement initState
-    // Get.put(LoaderController());
     super.initState();
     WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
       Get.find<LoaderController>().updateFormController(false);
@@ -77,8 +76,6 @@ class _LabDetailState extends State<LabDetail> {
 
   @override
   void dispose() {
-    // _nameController.dispose();
-    // _emailController.dispose();
     super.dispose();
   }
 
@@ -367,7 +364,6 @@ class _LabDetailState extends State<LabDetail> {
 
   getAddressFromLatLng() async {
     try {
-      // var currentPosition;
       List<Placemark> p = await GeocodingPlatform.instance
           .placemarkFromCoordinates(
               currentPosition.latitude, currentPosition.longitude);
@@ -377,16 +373,12 @@ class _LabDetailState extends State<LabDetail> {
 
         currentAddress =
             '${place.name}, ${place.subAdministrativeArea}, ${place.administrativeArea}, ${place.country}';
-        // var signUpAddressController;
-        // if (signUpAddressController.text.isEmpty) {
-        //   signUpAddressController.text = currentAddress;
-        // }
+
         print(currentAddress + ' yes');
         print(place.administrativeArea.toString());
         print(place.subAdministrativeArea.toString());
         print(place.thoroughfare.toString());
         print(place.toJson().toString());
-        // FocusScope.of(context).unfocus();
         locationController.text = place.name.toString();
       });
     } catch (e) {
@@ -416,7 +408,6 @@ class _LabDetailState extends State<LabDetail> {
       )
     });
     dio_instance.Dio dio = dio_instance.Dio();
-    // setCustomHeader(dio, 'Authorization', 'Bearer ${storageBox.read('accessToken')}');
     dio_instance.Response<dynamic> response;
     try {
       response = await dio.post(labProfileUpdateWizardService, data: formData);

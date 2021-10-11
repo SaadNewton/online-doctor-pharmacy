@@ -82,7 +82,6 @@ class _RegistrationUIWithMobileState extends State<RegistrationUIWithMobile> {
                                   .updateFormController(false);
                               Get.to(VerificationUI(
                                 getPhone: numberController.text,
-                                // registerTheUser: true,
                               ));
                             } else {
                               if (numberController.text.startsWith('0'))
@@ -98,12 +97,6 @@ class _RegistrationUIWithMobileState extends State<RegistrationUIWithMobile> {
                                 // registerTheUser: true,
                               ));
                             }
-
-                            // otpFunction(numberController.text, context);
-                            // Get.to(VerificationUI(
-                            //   getPhone: numberController,
-                            //   registerTheUser: false,
-                            // ));
                           }
                         }),
                         SizedBox(
@@ -126,35 +119,6 @@ class _RegistrationUIWithMobileState extends State<RegistrationUIWithMobile> {
                             )
                           ],
                         )
-
-                        // Row(
-                        //   children: [
-                        //     Expanded(
-                        //       child: CustomButton(
-                        //         icon: Image.asset('assets/icons/ic_fb.png',
-                        //             scale: 2),
-                        //         color: facebookButtonColor,
-                        //         label: locale.facebook,
-                        //         onTap: () =>
-                        //             widget.loginInteractor.loginWithFacebook(),
-                        //       ),
-                        //     ),
-                        //     SizedBox(width: 20.0),
-                        //     Expanded(
-                        //       child: CustomButton(
-                        //         label: locale.gmail,
-                        //         icon: Image.asset(
-                        //           'assets/icons/ic_ggl.png',
-                        //           scale: 3,
-                        //         ),
-                        //         color: theme.scaffoldBackgroundColor,
-                        //         textColor: theme.hintColor,
-                        //         onTap: () =>
-                        //             widget.loginInteractor.loginWithGoogle(),
-                        //       ),
-                        //     ),
-                        //   ],
-                        // ),
                       ],
                     ),
                   ),

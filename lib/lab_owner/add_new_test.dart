@@ -71,8 +71,6 @@ class _AddNewLabTestState extends State<AddNewLabTest> {
     }
   }
 
-  // String? _chosenValueForTestCategories;
-
   File? _image;
   ImagePicker _imagePicker = ImagePicker();
   _imgFromCamera() async {
@@ -199,73 +197,6 @@ class _AddNewLabTestState extends State<AddNewLabTest> {
                                     )
                                   : Container(),
                               SizedBox(height: 30),
-
-                              /// Test Category
-                              // Container(
-                              //   color: Theme.of(context).backgroundColor,
-                              //   child: Padding(
-                              //     padding: const EdgeInsets.symmetric(
-                              //         horizontal: 12, vertical: 6),
-                              //     child: Row(
-                              //       mainAxisAlignment:
-                              //           MainAxisAlignment.spaceBetween,
-                              //       children: [
-                              //         Icon(
-                              //           Icons.event_available_rounded,
-                              //           color: Theme.of(context).primaryColor,
-                              //         ),
-                              //         SizedBox(
-                              //           width: 15,
-                              //         ),
-                              //         Expanded(
-                              //           child: Text(widget.testCategoryName!,
-                              //               style: Theme.of(context)
-                              //                   .textTheme
-                              //                   .subtitle1!),
-                              //
-                              //           // child: DropdownButtonHideUnderline(
-                              //           //   child: DropdownButton<String>(
-                              //           //     focusColor: Colors.white,
-                              //           //     isExpanded: true,
-                              //           //     elevation: 1,
-                              //           //     style: TextStyle(fontSize: 15),
-                              //           //     iconEnabledColor: Colors.black,
-                              //           //     items: <String>[
-                              //           //       'Liver Test',
-                              //           //       'Urine Test',
-                              //           //       'Brain Test',
-                              //           //       'Body Test',
-                              //           //     ].map<DropdownMenuItem<String>>(
-                              //           //         (String value) {
-                              //           //       return DropdownMenuItem<String>(
-                              //           //         value: value,
-                              //           //         child: Text(
-                              //           //           value,
-                              //           //           style: TextStyle(color: Colors.black),
-                              //           //         ),
-                              //           //       );
-                              //           //     }).toList(),
-                              //           //     hint: Text(
-                              //           //       "Test Category",
-                              //           //       style: TextStyle(
-                              //           //         color: Colors.black,
-                              //           //         fontSize: 16,
-                              //           //       ),
-                              //           //     ),
-                              //           //     value: _chosenValueForTestCategories,
-                              //           //     onChanged: (String? value) {
-                              //           //       setState(() {
-                              //           //         _chosenValueForTestCategories = value!;
-                              //           //       });
-                              //           //     },
-                              //           //   ),
-                              //           // ),
-                              //         ),
-                              //       ],
-                              //     ),
-                              //   ),
-                              // ),
-                              SizedBox(height: 20.0),
 
                               /// Test Name
                               EntryField(
@@ -452,7 +383,6 @@ class _AddNewLabTestState extends State<AddNewLabTest> {
       )
     });
     dio_instance.Dio dio = dio_instance.Dio();
-    // setCustomHeader(dio, 'Authorization', 'Bearer ${storageBox.read('accessToken')}');
     dio_instance.Response<dynamic> response;
     try {
       response =
@@ -495,7 +425,6 @@ class _AddNewLabTestState extends State<AddNewLabTest> {
       });
     }
     dio_instance.Dio dio = dio_instance.Dio();
-    // setCustomHeader(dio, 'Authorization', 'Bearer ${storageBox.read('accessToken')}');
     dio_instance.Response<dynamic> response;
     try {
       response = await dio.post(updateTestUnderTestCategoryService,

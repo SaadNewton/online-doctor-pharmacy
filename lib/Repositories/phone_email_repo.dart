@@ -15,7 +15,6 @@ phoneEmailCheckRepo(
   if (responseCheck) {
     LoaderController c = Get.put(LoaderController());
     var emailPhoneValidModel;
-    // emailPhoneValidModel = EmailPhoneValidModel.fromJson(response);
     log('data ' + response.toString());
     if (response['email'] || response['phone']) {
       Get.find<LoaderController>().updateFormController(false);
@@ -57,6 +56,5 @@ phoneEmailCheckRepo(
     Get.find<LoaderController>().updateFormController(false);
 
     print('Exception........................' + response.toString());
-// Get.find<AppController>().changeServerErrorCheck(true);
   }
 }

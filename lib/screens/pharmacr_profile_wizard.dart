@@ -2,12 +2,6 @@ import 'package:doctoworld_seller/screens/pharmacy_account_detail.dart';
 import 'package:doctoworld_seller/screens/pharmacy_detail.dart';
 import 'package:flutter/material.dart';
 
-// List profileList = [];
-// List educationList = [];
-// List experienceList = [];
-// List specialityList = [];
-// List scheduleList = [];
-// List<String> getSpecialitiesList = [];
 bool isProfileIsCompleted = false;
 
 class PharmacyProfileWizard extends StatefulWidget {
@@ -25,8 +19,6 @@ class _PharmacyProfileWizardState extends State<PharmacyProfileWizard>
     // TODO: implement initState
 
     _profileWizardTabController = new TabController(length: 2, vsync: this);
-    // getMethod(
-    //     context, specialitiesListService, null, true, getSpecialityListRepo);
     super.initState();
   }
 

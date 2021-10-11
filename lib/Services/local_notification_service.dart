@@ -10,20 +10,19 @@ class LocalNotificationService {
         InitializationSettings(
             android: AndroidInitializationSettings('@mipmap/ic_launcher'));
     _flutterLocalNotificationsPlugin.initialize(initializationSettings,
-        onSelectNotification: (String? route) async {
-      // Navigator.of(context).PushNamed(route);
-    });
+        onSelectNotification: (String? route) async {});
   }
 
   static void display(RemoteMessage message) {
     final NotificationDetails _details = NotificationDetails(
-        android: AndroidNotificationDetails(
-      "easyApproach",
-      "easyApproach channel",
-      "this is our channel",
-      importance: Importance.max,
-      priority: Priority.high,
-    ));
+      android: AndroidNotificationDetails(
+        "easyApproach",
+        "easyApproach channel",
+        "this is our channel",
+        importance: Importance.max,
+        priority: Priority.high,
+      ),
+    );
     final id = DateTime.now().millisecondsSinceEpoch ~/ 1000;
     _flutterLocalNotificationsPlugin.show(
         id, message.notification!.title, message.notification!.body, _details,

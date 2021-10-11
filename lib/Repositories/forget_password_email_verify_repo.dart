@@ -16,11 +16,6 @@ forgotPasswordEmailVerifyRepo(
     forgetPasswordEmailVerifyModel =
         ForgetPasswordEmailVerifyModel.fromJson(response);
     if (forgetPasswordEmailVerifyModel.status == true) {
-      // Get.to(ForgetPassword());
-      // storeDataLocally('user_detail', response);
-      // storeDataLocally('session', 'active');
-      // storeDataLocally('authToken', userDetailModel.data!.auth!.token);
-      // Get.offAll(BottomNavigation());
       print(
           'Password Email verify Message------>> ${forgetPasswordEmailVerifyModel.message}');
     } else {
@@ -45,6 +40,5 @@ forgotPasswordEmailVerifyRepo(
     Get.find<LoaderController>().updateFormController(false);
 
     print('Exception........................ ' + response.toString());
-    // Get.find<AppController>().changeServerErrorCheck(true);
   }
 }

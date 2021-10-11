@@ -41,3 +41,6 @@ var contactUsModel;
 String isItemTypeAvailable = '0';
 
 List<String> itemTypes = [];
+List<String> itemTypePrice = [];
+
+String? selectedValue;

@@ -24,8 +24,6 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     delayScreen();
-
-    //LoginNavigator
   }
 
   delayScreen() async {
@@ -34,8 +32,6 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   route() {
-    // Navigator.pushReplacement(context,
-    //     MaterialPageRoute(builder: (context) => ForgotPasswordEmailVerify()));
     storageBox!.read('authToken') != null
         ? storageBox!.read('role') == 'lab_owner'
             ? storageBox!.read('labProfileComplete') == 'true'

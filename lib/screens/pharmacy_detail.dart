@@ -42,7 +42,6 @@ class _PharmacyDetailState extends State<PharmacyDetail> {
   @override
   void initState() {
     // TODO: implement initState
-    // Get.put(LoaderController());
 
     super.initState();
     WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
@@ -77,8 +76,6 @@ class _PharmacyDetailState extends State<PharmacyDetail> {
 
   @override
   void dispose() {
-    // _nameController.dispose();
-    // _emailController.dispose();
     super.dispose();
   }
 
@@ -375,16 +372,12 @@ class _PharmacyDetailState extends State<PharmacyDetail> {
       setState(() {
         currentAddress =
             '${place.name}, ${place.subAdministrativeArea}, ${place.administrativeArea}, ${place.country}';
-        // var signUpAddressController;
-        // if (signUpAddressController.text.isEmpty) {
-        //   signUpAddressController.text = currentAddress;
-        // }
+
         print(currentAddress + ' yes');
         print(place.administrativeArea.toString());
         print(place.subAdministrativeArea.toString());
         print(place.thoroughfare.toString());
         print(place.toJson().toString());
-        // FocusScope.of(context).unfocus();
         locationController.text = place.name.toString();
       });
     } catch (e) {
@@ -415,7 +408,6 @@ class _PharmacyDetailState extends State<PharmacyDetail> {
       )
     });
     dio_instance.Dio dio = dio_instance.Dio();
-    // setCustomHeader(dio, 'Authorization', 'Bearer ${storageBox.read('accessToken')}');
     dio_instance.Response<dynamic> response;
     try {
       response =

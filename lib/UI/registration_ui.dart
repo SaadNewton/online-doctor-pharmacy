@@ -127,22 +127,6 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
                         ),
                         SizedBox(height: 20.0),
 
-                        /// user-name
-
-                        // EntryField(
-                        //   controller: _usernameController,
-                        //   prefixIcon: Icons.person,
-                        //   hint: 'User Name',
-                        //   validator: (value) {
-                        //     if (value.isEmpty) {
-                        //       return 'Field is Required';
-                        //     } else {
-                        //       return null;
-                        //     }
-                        //   },
-                        // ),
-                        // SizedBox(height: 20.0),
-
                         /// Email
                         EntryField(
                           textInputType: TextInputType.emailAddress,
@@ -224,19 +208,6 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
 
                         ///  Location
 
-                        // EntryField(
-                        //   controller: _locationController,
-                        //   suffixIcon: Icons.add_location,
-                        //
-                        //   hint: 'Location',
-                        //   validator: (value){
-                        //     if(value.isEmpty){
-                        //       return 'Field is Required';
-                        //     }else{
-                        //       return null;
-                        //     }
-                        //   },
-                        // ),
                         TextFormField(
                           controller: locationController,
                           decoration: InputDecoration(
@@ -288,8 +259,6 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
                                   false,
                                   phoneEmailCheckRepo);
                             }
-                            // otpFunction(_phoneController.text, context);
-                            // Get.to(VerificationUI());
                           },
                         ),
                         SizedBox(height: 10.0),
@@ -302,12 +271,6 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
                             }),
 
                         SizedBox(height: 10.0),
-
-                        // CustomButton(
-                        //     color: Theme.of(context).scaffoldBackgroundColor,
-                        //     onTap: () {
-                        //       Get.to(VerificationUI(getPhone: phoneController.text,));
-                        //     }),
 
                         Text(
                           locale.wellSendAnOTP!,
@@ -353,7 +316,6 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
 
   getAddressFromLatLng() async {
     try {
-      // var currentPosition;
       List<Placemark> p = await GeocodingPlatform.instance
           .placemarkFromCoordinates(
               currentPosition!.latitude, currentPosition!.longitude);
@@ -361,16 +323,12 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
       setState(() {
         signUpCurrentAddress =
             '${place.name}, ${place.subAdministrativeArea}, ${place.administrativeArea}, ${place.country}';
-        // var signUpAddressController;
-        // if (signUpAddressController.text.isEmpty) {
-        //   signUpAddressController.text = currentAddress;
-        // }
+
         print(signUpCurrentAddress + ' yes');
         print(place.administrativeArea.toString());
         print(place.subAdministrativeArea.toString());
         print(place.thoroughfare.toString());
         print(place.toJson().toString());
-        // FocusScope.of(context).unfocus();
         locationController.text = place.name.toString();
       });
     } catch (e) {

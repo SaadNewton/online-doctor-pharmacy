@@ -30,14 +30,23 @@ class CustomOrderScreen extends StatefulWidget {
 }
 
 class _CustomOrderScreenState extends State<CustomOrderScreen> {
-  List<String> category = <String>['A', 'B', 'C'];
-
-  String selectedItemType;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    isItemTypeAvailable = '0';
+    itemTypes = [];
+    items = [];
+    productNameControllerEdit.clear();
+    priceControllerEdit.clear();
+    quantityControllerEdit.clear();
+  }
 
   GlobalKey<FormState> customOrderFormKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
+    String defaultItemTypeSelected;
     return GestureDetector(
       onTap: () {
         final FocusScopeNode currentFocus = FocusScope.of(context);
@@ -93,7 +102,6 @@ class _CustomOrderScreenState extends State<CustomOrderScreen> {
                                           top: 20, bottom: 16),
                                       child: Text(
                                         'MAKE OFFER',
-                                        // style: homeHeadingTextStyle,
                                       ),
                                     ),
                                     Container(
@@ -146,38 +154,49 @@ class _CustomOrderScreenState extends State<CustomOrderScreen> {
                                                               fillColor:
                                                                   Colors.white,
                                                               filled: true),
-                                                          hint: Padding(
-                                                            padding:
-                                                                const EdgeInsets
-                                                                        .only(
-                                                                    left: 0),
-                                                            child: Text(
-                                                              'Select Item Type',
-                                                              style: TextStyle(
-                                                                  color: Colors
-                                                                      .black),
-                                                            ),
-                                                          ),
-                                                          items: List.generate(
-                                                              (itemTypes
-                                                                  .length),
-                                                              (a) {
-                                                            return DropdownMenuItem(
-                                                              child: Text(
-                                                                  itemTypes[a]),
-                                                              value:
-                                                                  itemTypes[a],
-                                                            );
-                                                          }),
+                                                          items: itemTypes.map(
+                                                              (String
+                                                                  dropDownItem) {
+                                                            return DropdownMenuItem<
+                                                                    String>(
+                                                                value:
+                                                                    dropDownItem,
+                                                                child: Text(
+                                                                    dropDownItem));
+                                                          }).toList(),
+                                                          value:
+                                                              defaultItemTypeSelected =
+                                                                  itemTypes[2],
                                                           onChanged: (value) {
                                                             setState(() {
                                                               if (value ==
-                                                                  'Pharmacy') {
-                                                                selectedItemType =
-                                                                    'pharmacy_owner';
+                                                                  itemTypes[
+                                                                      0]) {
+                                                                defaultItemTypeSelected =
+                                                                    itemTypes[
+                                                                        0];
+                                                                priceControllerEdit
+                                                                        .text =
+                                                                    itemTypePrice[
+                                                                        0];
+                                                              } else if (value ==
+                                                                  itemTypes[
+                                                                      1]) {
+                                                                defaultItemTypeSelected =
+                                                                    itemTypes[
+                                                                        1];
+                                                                priceControllerEdit
+                                                                        .text =
+                                                                    itemTypePrice[
+                                                                        1];
                                                               } else {
-                                                                selectedItemType =
-                                                                    'lab_owner';
+                                                                defaultItemTypeSelected =
+                                                                    itemTypes[
+                                                                        2];
+                                                                priceControllerEdit
+                                                                        .text =
+                                                                    itemTypePrice[
+                                                                        2];
                                                               }
                                                             });
                                                           },
@@ -254,6 +273,10 @@ class _CustomOrderScreenState extends State<CustomOrderScreen> {
                                                                   quantityControllerEdit
                                                                       .text
                                                             });
+                                                            isItemTypeAvailable =
+                                                                '0';
+                                                            itemTypes = [];
+                                                            itemTypePrice = [];
                                                           });
                                                           productNameControllerEdit
                                                               .clear();

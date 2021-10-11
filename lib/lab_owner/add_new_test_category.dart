@@ -106,38 +106,6 @@ class _AddNewTestCategoryState extends State<AddNewTestCategory> {
                           height: 100,
                         )),
 
-                        // Center(
-                        //   child: GestureDetector(
-                        //     onTap: () {
-                        //       _showPicker(context);
-                        //     },
-                        //     child: Container(
-                        //       color: Colors.grey[200],
-                        //       child: _image != null
-                        //           ? ClipRRect(
-                        //               child: Image.file(
-                        //                 _image!,
-                        //                 width: 100,
-                        //                 height: 100,
-                        //                 fit: BoxFit.cover,
-                        //               ),
-                        //             )
-                        //           : Container(
-                        //               decoration: BoxDecoration(
-                        //                 color: Colors.grey[200],
-                        //                 borderRadius: BorderRadius.circular(50),
-                        //               ),
-                        //               width: 100,
-                        //               height: 100,
-                        //               child: Icon(
-                        //                 Icons.camera_alt,
-                        //                 color: Colors.grey[800],
-                        //               ),
-                        //             ),
-                        //     ),
-                        //   ),
-                        // ),
-
                         SizedBox(height: 30),
 
                         /// Test Name

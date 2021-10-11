@@ -18,7 +18,6 @@ getMethod(
   dio_instance.Response response;
   dio_instance.Dio dio = new dio_instance.Dio();
 
-  // dio.options.connectTimeout = 20000;
   dio.options.receiveTimeout = 6000;
 
   if (addAuthHeader && storageBox!.hasData('authToken')) {
@@ -30,7 +29,7 @@ getMethod(
     final result = await InternetAddress.lookup('google.com');
     if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
       print('Internet Connected');
-      // Get.find<AppController>().changeInternetCheckerState(true);
+
       try {
         response = await dio.get(apiUrl, queryParameters: queryData);
 
@@ -44,15 +43,10 @@ getMethod(
       } on dio_instance.DioError catch (e) {
         executionMethod(false, null, context);
         if (e.response != null) {
-          // print(
-          //     'Dio Error From Get $apiUrl -->> ${e.response!.data['message']}');
           print('Dio Error From Get $apiUrl -->> ${e.response!.data}');
         } else {
           print('Dio Error From Get $apiUrl -->> ${e}');
         }
-
-        // messageShowService(response.data,false);
-
       }
     }
   } on SocketException catch (_) {

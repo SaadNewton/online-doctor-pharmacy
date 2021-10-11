@@ -40,39 +40,12 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     var locale = AppLocalizations.of(context)!;
     List<MenuTile> _menu = [
-      // MenuTile(locale.myOrders, locale.companyPolicies, Icons.assignment, () {
-      //   Navigator.pushNamed(context, PageRoutes.recentOrdersTabs);
-      // }),
-      // MenuTile(locale.storeProfile, locale.letUsHelpYou, Icons.store, () {
-      //   Navigator.pushNamed(context, PageRoutes.profilePage);
-      // }),
-      // MenuTile(
-      //     locale.wallet, locale.quickPayments, Icons.account_balance_wallet,
-      //     () {
-      //   Navigator.pushNamed(context, PageRoutes.walletPage);
-      // }),
-      // MenuTile(locale.insight, locale.seeTheProgress, Icons.insert_chart, () {
-      //   Navigator.pushNamed(context, PageRoutes.insightPage);
-      // }),
-      // MenuTile(locale.earnings, locale.sellOverview, Icons.monetization_on, () {
-      //   Navigator.pushNamed(context, PageRoutes.earningsPage);
-      // }),
-      // MenuTile(locale.myItems, locale.manageItems, Icons.local_hospital, () {
-      //   Navigator.pushNamed(context, PageRoutes.myItemsPage);
-      // }),
-      // MenuTile(locale.changeLanguage, locale.changeLanguage, Icons.language,
-      //     () {
-      //   Navigator.pushNamed(context, PageRoutes.languagePage);
-      // }),
       MenuTile(locale.tnC, locale.companyPolicies, Icons.assignment, () {
         Navigator.pushNamed(context, PageRoutes.tncPage);
       }),
       MenuTile(locale.contactUs, locale.letUsHelpYou, Icons.mail, () {
         Get.to(ContactUs());
       }),
-      // MenuTile(locale.faqs, locale.quickAnswers, Icons.announcement, () {
-      //   Navigator.pushNamed(context, PageRoutes.faqPage);
-      // }),
       MenuTile('Reset Password', 'Be Secure', Icons.lock, () {
         Get.to(ChangePassword(
           userId: userDetailModel!.data!.id,

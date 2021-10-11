@@ -1,4 +1,4 @@
-/// data : [{"id":5,"customer_id":9,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"140","total_price":"140","shipping_price":"0","tax":"0","discount":null,"status":"accepted","lab_id":null,"pharmacy_id":7,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"created_at":"2021-09-25T11:58:12.000000Z","updated_at":"2021-09-25T12:06:12.000000Z","order_billing":null,"order_shipping":{"id":35,"order_id":5,"name":"abubakar","email":null,"company_name":null,"phone_number":"+923441771877","address":"Invictus Solutions Faisalabad","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-09-25T11:58:13.000000Z","updated_at":"2021-09-25T11:58:13.000000Z"},"order_product":[{"id":5,"order_id":5,"product_id":24513,"category_id":1,"company_id":2,"name":"Feboric  Tab","salt_name":"test","image_path":"assets/admin/product/1629978484_feboric_40mg_1500x.jpg","retail_price":null,"sale_price":"140","item_type_name":"Strip","sku":"30906","qty":"1","potency":"80mg","type":"medicine","created_at":"2021-09-25T11:58:12.000000Z","updated_at":"2021-09-25T11:58:12.000000Z"}],"customer":{"id":9,"name":"abubakar","user_name":null,"email":"abubakarflutter@gmail.com","image":null,"phone":"+923441771877","otp_is_verified":1,"address":"Invictus Solutions Faisalabad","country":null,"city":null,"state":null,"postal_code":null,"lat":"455","long":"55","location":null,"status":null,"is_active":null,"created_at":"2021-08-27T10:23:45.000000Z","updated_at":"2021-09-13T14:17:12.000000Z"},"lab":null},{"id":8,"customer_id":1,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":null,"total_price":null,"shipping_price":null,"tax":null,"discount":null,"status":"accepted","lab_id":null,"pharmacy_id":7,"is_prescription":1,"is_order_approved":2,"image_path1":null,"image_path2":null,"created_at":"2021-09-28T08:23:39.000000Z","updated_at":"2021-09-28T08:30:58.000000Z","order_billing":null,"order_shipping":{"id":6,"order_id":8,"name":"Muhammad Aftab ur Rehman","email":null,"company_name":null,"phone_number":"+923217858824","address":"P#215 Street#8 Redux Road Nisar Colony Samnabad","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-09-12T23:46:38.000000Z","updated_at":"2021-09-12T23:46:38.000000Z"},"order_product":[],"customer":{"id":1,"name":"asdsad","user_name":"john9","email":"bk@gmail.com","image":"1632831765_Black.png","phone":"03330630098","otp_is_verified":1,"address":"qwessd","country":null,"city":null,"state":null,"postal_code":null,"lat":"455","long":"55","location":null,"status":null,"is_active":null,"created_at":"2021-08-10T05:42:13.000000Z","updated_at":"2021-09-28T12:22:45.000000Z"},"lab":null},{"id":9,"customer_id":1,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":null,"total_price":null,"shipping_price":null,"tax":null,"discount":null,"status":"accepted","lab_id":null,"pharmacy_id":7,"is_prescription":1,"is_order_approved":2,"image_path1":null,"image_path2":null,"created_at":"2021-09-28T09:38:53.000000Z","updated_at":"2021-09-28T10:12:32.000000Z","order_billing":null,"order_shipping":{"id":7,"order_id":9,"name":"abubakar","email":null,"company_name":null,"phone_number":"+923441771877","address":"Invictus Solutions Faisalabad","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-09-13T14:17:38.000000Z","updated_at":"2021-09-13T14:17:38.000000Z"},"order_product":[],"customer":{"id":1,"name":"asdsad","user_name":"john9","email":"bk@gmail.com","image":"1632831765_Black.png","phone":"03330630098","otp_is_verified":1,"address":"qwessd","country":null,"city":null,"state":null,"postal_code":null,"lat":"455","long":"55","location":null,"status":null,"is_active":null,"created_at":"2021-08-10T05:42:13.000000Z","updated_at":"2021-09-28T12:22:45.000000Z"},"lab":null},{"id":10,"customer_id":1,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":null,"total_price":null,"shipping_price":null,"tax":null,"discount":null,"status":"accepted","lab_id":null,"pharmacy_id":7,"is_prescription":1,"is_order_approved":2,"image_path1":null,"image_path2":null,"created_at":"2021-09-28T10:15:46.000000Z","updated_at":"2021-09-28T10:16:05.000000Z","order_billing":null,"order_shipping":{"id":8,"order_id":10,"name":"John Walker","email":null,"company_name":null,"phone_number":"03330630098","address":"qwessd","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-09-13T14:22:56.000000Z","updated_at":"2021-09-13T14:22:56.000000Z"},"order_product":[],"customer":{"id":1,"name":"asdsad","user_name":"john9","email":"bk@gmail.com","image":"1632831765_Black.png","phone":"03330630098","otp_is_verified":1,"address":"qwessd","country":null,"city":null,"state":null,"postal_code":null,"lat":"455","long":"55","location":null,"status":null,"is_active":null,"created_at":"2021-08-10T05:42:13.000000Z","updated_at":"2021-09-28T12:22:45.000000Z"},"lab":null},{"id":12,"customer_id":1,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":null,"total_price":null,"shipping_price":null,"tax":null,"discount":null,"status":"accepted","lab_id":null,"pharmacy_id":7,"is_prescription":1,"is_order_approved":2,"image_path1":null,"image_path2":null,"created_at":"2021-09-29T04:43:10.000000Z","updated_at":"2021-09-29T04:50:01.000000Z","order_billing":null,"order_shipping":{"id":10,"order_id":12,"name":"John Walker","email":null,"company_name":null,"phone_number":"03330630098","address":"Hakeem Sultan Ahmad Dawoodi Road","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-09-17T08:15:37.000000Z","updated_at":"2021-09-17T08:15:37.000000Z"},"order_product":[],"customer":{"id":1,"name":"asdsad","user_name":"john9","email":"bk@gmail.com","image":"1632831765_Black.png","phone":"03330630098","otp_is_verified":1,"address":"qwessd","country":null,"city":null,"state":null,"postal_code":null,"lat":"455","long":"55","location":null,"status":null,"is_active":null,"created_at":"2021-08-10T05:42:13.000000Z","updated_at":"2021-09-28T12:22:45.000000Z"},"lab":null}]
+/// data : [{"id":2,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Jazz Cash","sub_total":"4","total_price":"54","commission_price":null,"pay_total":null,"shipping_price":"50","tax":"0","discount":null,"status":"delivered","lab_id":null,"pharmacy_id":1,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-04T08:34:37.000000Z","updated_at":"2021-10-04T08:39:46.000000Z","order_billing":null,"order_shipping":{"id":2,"order_id":2,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-04T08:34:37.000000Z","updated_at":"2021-10-04T08:34:37.000000Z"},"order_product":[{"id":3,"order_id":2,"product_id":1,"category_id":1,"company_id":2,"name":"Arinac","salt_name":"Arinac","image_path":null,"retail_price":null,"sale_price":"4","item_type_name":"","sku":"1986","qty":"1","potency":"20mg","type":"medicine","created_at":"2021-10-04T08:34:37.000000Z","updated_at":"2021-10-04T08:34:37.000000Z"}],"customer":{"id":2,"name":"Bilal Hassan","user_name":null,"email":"hassanbilal099@gmail.com","image":null,"phone":"+923477459552","otp_is_verified":1,"address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","country":null,"city":null,"state":null,"postal_code":null,"lat":"31.45036619999999","long":"73.13496049999999","location":null,"status":null,"is_active":null,"is_profile_complete":"1","created_at":"2021-08-10T05:57:52.000000Z","updated_at":"2021-09-10T09:57:48.000000Z"},"lab":null},null]
 /// status : true
 /// success : 1
 /// message : "Fetching record"
@@ -49,30 +49,33 @@ class AcceptedOrdersModel {
   }
 }
 
-/// id : 5
-/// customer_id : 9
+/// id : 2
+/// customer_id : 2
 /// session_id : null
 /// customer_name : null
 /// shipping_method : null
-/// payment_method : "Cash on Delivery"
-/// sub_total : "140"
-/// total_price : "140"
-/// shipping_price : "0"
+/// payment_method : "Jazz Cash"
+/// sub_total : "4"
+/// total_price : "54"
+/// commission_price : null
+/// pay_total : null
+/// shipping_price : "50"
 /// tax : "0"
 /// discount : null
-/// status : "accepted"
+/// status : "delivered"
 /// lab_id : null
-/// pharmacy_id : 7
+/// pharmacy_id : 1
 /// is_prescription : 0
 /// is_order_approved : 0
 /// image_path1 : null
 /// image_path2 : null
-/// created_at : "2021-09-25T11:58:12.000000Z"
-/// updated_at : "2021-09-25T12:06:12.000000Z"
+/// remarks : null
+/// created_at : "2021-10-04T08:34:37.000000Z"
+/// updated_at : "2021-10-04T08:39:46.000000Z"
 /// order_billing : null
-/// order_shipping : {"id":35,"order_id":5,"name":"abubakar","email":null,"company_name":null,"phone_number":"+923441771877","address":"Invictus Solutions Faisalabad","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-09-25T11:58:13.000000Z","updated_at":"2021-09-25T11:58:13.000000Z"}
-/// order_product : [{"id":5,"order_id":5,"product_id":24513,"category_id":1,"company_id":2,"name":"Feboric  Tab","salt_name":"test","image_path":"assets/admin/product/1629978484_feboric_40mg_1500x.jpg","retail_price":null,"sale_price":"140","item_type_name":"Strip","sku":"30906","qty":"1","potency":"80mg","type":"medicine","created_at":"2021-09-25T11:58:12.000000Z","updated_at":"2021-09-25T11:58:12.000000Z"}]
-/// customer : {"id":9,"name":"abubakar","user_name":null,"email":"abubakarflutter@gmail.com","image":null,"phone":"+923441771877","otp_is_verified":1,"address":"Invictus Solutions Faisalabad","country":null,"city":null,"state":null,"postal_code":null,"lat":"455","long":"55","location":null,"status":null,"is_active":null,"created_at":"2021-08-27T10:23:45.000000Z","updated_at":"2021-09-13T14:17:12.000000Z"}
+/// order_shipping : {"id":2,"order_id":2,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-04T08:34:37.000000Z","updated_at":"2021-10-04T08:34:37.000000Z"}
+/// order_product : [{"id":3,"order_id":2,"product_id":1,"category_id":1,"company_id":2,"name":"Arinac","salt_name":"Arinac","image_path":null,"retail_price":null,"sale_price":"4","item_type_name":"","sku":"1986","qty":"1","potency":"20mg","type":"medicine","created_at":"2021-10-04T08:34:37.000000Z","updated_at":"2021-10-04T08:34:37.000000Z"}]
+/// customer : {"id":2,"name":"Bilal Hassan","user_name":null,"email":"hassanbilal099@gmail.com","image":null,"phone":"+923477459552","otp_is_verified":1,"address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","country":null,"city":null,"state":null,"postal_code":null,"lat":"31.45036619999999","long":"73.13496049999999","location":null,"status":null,"is_active":null,"is_profile_complete":"1","created_at":"2021-08-10T05:57:52.000000Z","updated_at":"2021-09-10T09:57:48.000000Z"}
 /// lab : null
 
 class AcceptedOrderDetailData {
@@ -84,6 +87,8 @@ class AcceptedOrderDetailData {
   String? _paymentMethod;
   String? _subTotal;
   String? _totalPrice;
+  dynamic? _commissionPrice;
+  dynamic? _payTotal;
   String? _shippingPrice;
   String? _tax;
   dynamic? _discount;
@@ -94,6 +99,7 @@ class AcceptedOrderDetailData {
   int? _isOrderApproved;
   dynamic? _imagePath1;
   dynamic? _imagePath2;
+  dynamic? _remarks;
   String? _createdAt;
   String? _updatedAt;
   dynamic? _orderBilling;
@@ -110,6 +116,8 @@ class AcceptedOrderDetailData {
   String? get paymentMethod => _paymentMethod;
   String? get subTotal => _subTotal;
   String? get totalPrice => _totalPrice;
+  dynamic? get commissionPrice => _commissionPrice;
+  dynamic? get payTotal => _payTotal;
   String? get shippingPrice => _shippingPrice;
   String? get tax => _tax;
   dynamic? get discount => _discount;
@@ -120,6 +128,7 @@ class AcceptedOrderDetailData {
   int? get isOrderApproved => _isOrderApproved;
   dynamic? get imagePath1 => _imagePath1;
   dynamic? get imagePath2 => _imagePath2;
+  dynamic? get remarks => _remarks;
   String? get createdAt => _createdAt;
   String? get updatedAt => _updatedAt;
   dynamic? get orderBilling => _orderBilling;
@@ -137,6 +146,8 @@ class AcceptedOrderDetailData {
       String? paymentMethod,
       String? subTotal,
       String? totalPrice,
+      dynamic? commissionPrice,
+      dynamic? payTotal,
       String? shippingPrice,
       String? tax,
       dynamic? discount,
@@ -147,6 +158,7 @@ class AcceptedOrderDetailData {
       int? isOrderApproved,
       dynamic? imagePath1,
       dynamic? imagePath2,
+      dynamic? remarks,
       String? createdAt,
       String? updatedAt,
       dynamic? orderBilling,
@@ -162,6 +174,8 @@ class AcceptedOrderDetailData {
     _paymentMethod = paymentMethod;
     _subTotal = subTotal;
     _totalPrice = totalPrice;
+    _commissionPrice = commissionPrice;
+    _payTotal = payTotal;
     _shippingPrice = shippingPrice;
     _tax = tax;
     _discount = discount;
@@ -172,6 +186,7 @@ class AcceptedOrderDetailData {
     _isOrderApproved = isOrderApproved;
     _imagePath1 = imagePath1;
     _imagePath2 = imagePath2;
+    _remarks = remarks;
     _createdAt = createdAt;
     _updatedAt = updatedAt;
     _orderBilling = orderBilling;
@@ -190,6 +205,8 @@ class AcceptedOrderDetailData {
     _paymentMethod = json['payment_method'];
     _subTotal = json['sub_total'];
     _totalPrice = json['total_price'];
+    _commissionPrice = json['commission_price'];
+    _payTotal = json['pay_total'];
     _shippingPrice = json['shipping_price'];
     _tax = json['tax'];
     _discount = json['discount'];
@@ -200,6 +217,7 @@ class AcceptedOrderDetailData {
     _isOrderApproved = json['is_order_approved'];
     _imagePath1 = json['image_path1'];
     _imagePath2 = json['image_path2'];
+    _remarks = json['remarks'];
     _createdAt = json['created_at'];
     _updatedAt = json['updated_at'];
     _orderBilling = json['order_billing'];
@@ -227,6 +245,8 @@ class AcceptedOrderDetailData {
     map['payment_method'] = _paymentMethod;
     map['sub_total'] = _subTotal;
     map['total_price'] = _totalPrice;
+    map['commission_price'] = _commissionPrice;
+    map['pay_total'] = _payTotal;
     map['shipping_price'] = _shippingPrice;
     map['tax'] = _tax;
     map['discount'] = _discount;
@@ -237,6 +257,7 @@ class AcceptedOrderDetailData {
     map['is_order_approved'] = _isOrderApproved;
     map['image_path1'] = _imagePath1;
     map['image_path2'] = _imagePath2;
+    map['remarks'] = _remarks;
     map['created_at'] = _createdAt;
     map['updated_at'] = _updatedAt;
     map['order_billing'] = _orderBilling;
@@ -254,25 +275,26 @@ class AcceptedOrderDetailData {
   }
 }
 
-/// id : 9
-/// name : "abubakar"
+/// id : 2
+/// name : "Bilal Hassan"
 /// user_name : null
-/// email : "abubakarflutter@gmail.com"
+/// email : "hassanbilal099@gmail.com"
 /// image : null
-/// phone : "+923441771877"
+/// phone : "+923477459552"
 /// otp_is_verified : 1
-/// address : "Invictus Solutions Faisalabad"
+/// address : "Faisalabad - Samundri Road, Faisalabad, Pakistan"
 /// country : null
 /// city : null
 /// state : null
 /// postal_code : null
-/// lat : "455"
-/// long : "55"
+/// lat : "31.45036619999999"
+/// long : "73.13496049999999"
 /// location : null
 /// status : null
 /// is_active : null
-/// created_at : "2021-08-27T10:23:45.000000Z"
-/// updated_at : "2021-09-13T14:17:12.000000Z"
+/// is_profile_complete : "1"
+/// created_at : "2021-08-10T05:57:52.000000Z"
+/// updated_at : "2021-09-10T09:57:48.000000Z"
 
 class Customer {
   int? _id;
@@ -292,6 +314,7 @@ class Customer {
   dynamic? _location;
   dynamic? _status;
   dynamic? _isActive;
+  String? _isProfileComplete;
   String? _createdAt;
   String? _updatedAt;
 
@@ -312,6 +335,7 @@ class Customer {
   dynamic? get location => _location;
   dynamic? get status => _status;
   dynamic? get isActive => _isActive;
+  String? get isProfileComplete => _isProfileComplete;
   String? get createdAt => _createdAt;
   String? get updatedAt => _updatedAt;
 
@@ -333,6 +357,7 @@ class Customer {
       dynamic? location,
       dynamic? status,
       dynamic? isActive,
+      String? isProfileComplete,
       String? createdAt,
       String? updatedAt}) {
     _id = id;
@@ -352,6 +377,7 @@ class Customer {
     _location = location;
     _status = status;
     _isActive = isActive;
+    _isProfileComplete = isProfileComplete;
     _createdAt = createdAt;
     _updatedAt = updatedAt;
   }
@@ -374,6 +400,7 @@ class Customer {
     _location = json['location'];
     _status = json['status'];
     _isActive = json['is_active'];
+    _isProfileComplete = json['is_profile_complete'];
     _createdAt = json['created_at'];
     _updatedAt = json['updated_at'];
   }
@@ -397,29 +424,30 @@ class Customer {
     map['location'] = _location;
     map['status'] = _status;
     map['is_active'] = _isActive;
+    map['is_profile_complete'] = _isProfileComplete;
     map['created_at'] = _createdAt;
     map['updated_at'] = _updatedAt;
     return map;
   }
 }
 
-/// id : 5
-/// order_id : 5
-/// product_id : 24513
+/// id : 3
+/// order_id : 2
+/// product_id : 1
 /// category_id : 1
 /// company_id : 2
-/// name : "Feboric  Tab"
-/// salt_name : "test"
-/// image_path : "assets/admin/product/1629978484_feboric_40mg_1500x.jpg"
+/// name : "Arinac"
+/// salt_name : "Arinac"
+/// image_path : null
 /// retail_price : null
-/// sale_price : "140"
-/// item_type_name : "Strip"
-/// sku : "30906"
+/// sale_price : "4"
+/// item_type_name : ""
+/// sku : "1986"
 /// qty : "1"
-/// potency : "80mg"
+/// potency : "20mg"
 /// type : "medicine"
-/// created_at : "2021-09-25T11:58:12.000000Z"
-/// updated_at : "2021-09-25T11:58:12.000000Z"
+/// created_at : "2021-10-04T08:34:37.000000Z"
+/// updated_at : "2021-10-04T08:34:37.000000Z"
 
 class Order_product {
   int? _id;
@@ -429,7 +457,7 @@ class Order_product {
   int? _companyId;
   String? _name;
   String? _saltName;
-  String? _imagePath;
+  dynamic? _imagePath;
   dynamic? _retailPrice;
   String? _salePrice;
   String? _itemTypeName;
@@ -447,7 +475,7 @@ class Order_product {
   int? get companyId => _companyId;
   String? get name => _name;
   String? get saltName => _saltName;
-  String? get imagePath => _imagePath;
+  dynamic? get imagePath => _imagePath;
   dynamic? get retailPrice => _retailPrice;
   String? get salePrice => _salePrice;
   String? get itemTypeName => _itemTypeName;
@@ -474,7 +502,7 @@ class Order_product {
       int? companyId,
       String? name,
       String? saltName,
-      String? imagePath,
+      dynamic? imagePath,
       dynamic? retailPrice,
       String? salePrice,
       String? itemTypeName,
@@ -546,19 +574,19 @@ class Order_product {
   }
 }
 
-/// id : 35
-/// order_id : 5
-/// name : "abubakar"
+/// id : 2
+/// order_id : 2
+/// name : "Bilal Hassan"
 /// email : null
 /// company_name : null
-/// phone_number : "+923441771877"
-/// address : "Invictus Solutions Faisalabad"
+/// phone_number : "+923477459552"
+/// address : "Faisalabad - Samundri Road, Faisalabad, Pakistan"
 /// city : null
 /// country : null
 /// state : null
 /// postal_code : null
-/// created_at : "2021-09-25T11:58:13.000000Z"
-/// updated_at : "2021-09-25T11:58:13.000000Z"
+/// created_at : "2021-10-04T08:34:37.000000Z"
+/// updated_at : "2021-10-04T08:34:37.000000Z"
 
 class Order_shipping {
   int? _id;

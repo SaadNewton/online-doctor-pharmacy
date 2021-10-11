@@ -17,6 +17,5 @@ getMedicineFromSearchRepo(
     Get.find<LoaderController>().updateDataController(false);
 
     print('Exception........................');
-    // Get.find<AppController>().changeServerErrorCheck(true);
   }
 }

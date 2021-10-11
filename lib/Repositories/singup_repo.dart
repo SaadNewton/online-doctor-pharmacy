@@ -27,8 +27,6 @@ getSignupData(
         storeDataLocally('role', signupUserdataModel!.data!.auth!.role);
         storeDataLocally('labProfileComplete', 'false');
         Get.offAll(LabProfileWizard());
-
-        // Get.offAll(LabProfileWizard());
       } else {
         storeDataLocally('pharmacy_id', signupUserdataModel!.data!.id);
         storeDataLocally('role', signupUserdataModel!.data!.auth!.role);
@@ -55,6 +53,5 @@ getSignupData(
     Get.find<LoaderController>().updateFormController(false);
 
     print('Exception........................' + response.toString());
-// Get.find<AppController>().changeServerErrorCheck(true);
   }
 }

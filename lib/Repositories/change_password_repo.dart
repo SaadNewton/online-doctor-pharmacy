@@ -17,10 +17,6 @@ changePasswordRepo(
     Get.find<LoaderController>().updateFormController(false);
     changePasswordModel = ChangePasswordModel.fromJson(response);
     if (changePasswordModel.status == true) {
-      // storeDataLocally('user_detail', response);
-      // storeDataLocally('session', 'active');
-      // storeDataLocally('authToken', userDet ailModel.data!.auth!.token);
-      // Get.offAll(BottomNavigation());
       Get.snackbar('Done', 'Password Changed Successfully.',
           backgroundColor: Colors.white, snackPosition: SnackPosition.BOTTOM);
       print('Change Password Message------>> ${changePasswordModel.message}');
@@ -48,6 +44,5 @@ changePasswordRepo(
     Get.find<LoaderController>().updateFormController(false);
 
     print('Exception........................ ' + response.toString());
-    // Get.find<AppController>().changeServerErrorCheck(true);
   }
 }

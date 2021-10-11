@@ -19,6 +19,5 @@ getNotifyTokenRepo(
     } else {}
   } else if (!responseCheck && response == null) {
     print('Exception........................');
-    // Get.find<AppController>().changeServerErrorCheck(true);
   }
 }

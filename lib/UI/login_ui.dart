@@ -12,7 +12,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
 import 'customer_password_email_ui.dart';
@@ -87,7 +86,6 @@ class _LoginUIState extends State<LoginUI> {
                             SizedBox(
                                 height:
                                     MediaQuery.of(context).size.height * 0.45),
-
                             Padding(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 5),
@@ -206,7 +204,6 @@ class _LoginUIState extends State<LoginUI> {
                             SizedBox(height: 30.0),
                             CustomButton(onTap: () {
                               if (loginKey.currentState!.validate()) {
-                                //    .loginWithEmail('', _emailController.text);
                                 _.updateFormController(true);
                                 postMethod(
                                     context,
@@ -254,34 +251,6 @@ class _LoginUIState extends State<LoginUI> {
                               ),
                             ),
                             SizedBox(height: 30.0),
-
-                            // Spacer(),
-                            // Row(
-                            //   children: [
-                            //     Expanded(
-                            //       child: CustomButton(
-                            //         icon: Image.asset('assets/Icons/ic_fb.png',
-                            //             scale: 2),
-                            //         color: Color(0xff3b45c1),
-                            //         label: locale.facebook,
-                            //         onTap: () =>
-                            //             widget.loginInteractor.loginWithFacebook(),
-                            //       ),
-                            //     ),
-                            //     SizedBox(width: 20.0),
-                            //     Expanded(
-                            //       child: CustomButton(
-                            //         label: locale.gmail,
-                            //         icon: Image.asset('assets/Icons/ic_ggl.png',
-                            //             scale: 3),
-                            //         color: Theme.of(context).scaffoldBackgroundColor,
-                            //         textColor: Theme.of(context).hintColor,
-                            //         onTap: () =>
-                            //             widget.loginInteractor.loginWithGoogle(),
-                            //       ),
-                            //     ),
-                            //   ],
-                            // ),
                           ],
                         ),
                       ),

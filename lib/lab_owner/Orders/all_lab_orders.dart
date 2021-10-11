@@ -287,11 +287,6 @@ class _AllLabOrdersState extends State<AllLabOrders>
   }
 }
 
-// For First Tab - New Orders Requests
-//
-//
-// First Tab Code Starts Here
-
 class AllOrders extends StatefulWidget {
   @override
   _AllOrdersState createState() => _AllOrdersState();
@@ -397,23 +392,6 @@ class _AllOrdersState extends State<AllOrders> {
                                                   .subtitle2!
                                                   .copyWith(fontSize: 12)),
                                           Spacer(),
-                                          // Column(
-                                          //   crossAxisAlignment: CrossAxisAlignment.end,
-                                          //   children: [
-                                          //     Text(
-                                          //       'Amount ${widget.labAllOrdersModel!.data![outerIndex].totalPrice}',
-                                          //       style: TextStyle(
-                                          //         fontSize: 12.0,
-                                          //       ),
-                                          //     ),
-                                          //     Text(
-                                          //       '${widget.labAllOrdersModel!.data![outerIndex].paymentMethod}',
-                                          //       style: TextStyle(
-                                          //         fontSize: 12.0,
-                                          //       ),
-                                          //     ),
-                                          //   ],
-                                          // ),
                                         ],
                                       ),
                                       SizedBox(
@@ -435,9 +413,6 @@ class _AllOrdersState extends State<AllOrders> {
   }
 }
 
-// For Second Tab - in progress Orders Tab View
-//
-//
 /// Second Tab sample collected Starts Here
 
 class AcceptedOrders extends StatefulWidget {
@@ -553,23 +528,6 @@ class _AcceptedOrdersState extends State<AcceptedOrders> {
                                                   .subtitle2!
                                                   .copyWith(fontSize: 12)),
                                           Spacer(),
-                                          // Column(
-                                          //   crossAxisAlignment: CrossAxisAlignment.end,
-                                          //   children: [
-                                          //     Text(
-                                          //       'Amount ${widget.labAllOrdersModel!.data![outerIndex].totalPrice}',
-                                          //       style: TextStyle(
-                                          //         fontSize: 12.0,
-                                          //       ),
-                                          //     ),
-                                          //     Text(
-                                          //       '${widget.labAllOrdersModel!.data![outerIndex].paymentMethod}',
-                                          //       style: TextStyle(
-                                          //         fontSize: 12.0,
-                                          //       ),
-                                          //     ),
-                                          //   ],
-                                          // ),
                                         ],
                                       ),
                                       SizedBox(
@@ -704,23 +662,6 @@ class _InProgressOrdersState extends State<InProgressOrders> {
                                                   .subtitle2!
                                                   .copyWith(fontSize: 12)),
                                           Spacer(),
-                                          // Column(
-                                          //   crossAxisAlignment: CrossAxisAlignment.end,
-                                          //   children: [
-                                          //     Text(
-                                          //       'Amount ${widget.labAllOrdersModel!.data![outerIndex].totalPrice}',
-                                          //       style: TextStyle(
-                                          //         fontSize: 12.0,
-                                          //       ),
-                                          //     ),
-                                          //     Text(
-                                          //       '${widget.labAllOrdersModel!.data![outerIndex].paymentMethod}',
-                                          //       style: TextStyle(
-                                          //         fontSize: 12.0,
-                                          //       ),
-                                          //     ),
-                                          //   ],
-                                          // ),
                                         ],
                                       ),
                                       SizedBox(
@@ -855,23 +796,6 @@ class _CompletedOrdersState extends State<CompletedOrders> {
                                                   .subtitle2!
                                                   .copyWith(fontSize: 12)),
                                           Spacer(),
-                                          // Column(
-                                          //   crossAxisAlignment: CrossAxisAlignment.end,
-                                          //   children: [
-                                          //     Text(
-                                          //       'Amount ${widget.labAllOrdersModel!.data![outerIndex].totalPrice}',
-                                          //       style: TextStyle(
-                                          //         fontSize: 12.0,
-                                          //       ),
-                                          //     ),
-                                          //     Text(
-                                          //       '${widget.labAllOrdersModel!.data![outerIndex].paymentMethod}',
-                                          //       style: TextStyle(
-                                          //         fontSize: 12.0,
-                                          //       ),
-                                          //     ),
-                                          //   ],
-                                          // ),
                                         ],
                                       ),
                                       SizedBox(
