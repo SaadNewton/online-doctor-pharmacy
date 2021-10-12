@@ -2,7 +2,6 @@ import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:doctoworld_seller/Controllers/loading_controller.dart';
 import 'package:doctoworld_seller/Data/global_data.dart';
 import 'package:doctoworld_seller/Services/service_urls.dart';
-import 'package:doctoworld_seller/Storage/local_Storage.dart';
 import 'package:doctoworld_seller/components/custom_button.dart';
 import 'package:doctoworld_seller/components/entry_field.dart';
 import 'package:doctoworld_seller/repositories/forgot_password_email_repo.dart';
@@ -20,6 +19,11 @@ class _PasswordEmailState extends State<PasswordEmail> {
   GlobalKey<FormState> _passwordEmailKey = GlobalKey();
 
   final _scrollController = ScrollController();
+
+  List<String> roleList = [
+    'Pharmacy',
+    'Lab',
+  ];
 
   @override
   void dispose() {
@@ -60,6 +64,50 @@ class _PasswordEmailState extends State<PasswordEmail> {
                             children: [
                               SizedBox(height: 20),
 
+                              Padding(
+                                padding: const EdgeInsets.all(5.0),
+                                child: Material(
+                                  child: DropdownButtonFormField<String>(
+                                    validator: (v) {
+                                      if (v == null) {
+                                        return 'Please Select Role';
+                                      }
+                                      return null;
+                                    },
+                                    decoration: InputDecoration(
+                                        contentPadding:
+                                            EdgeInsets.only(left: 12),
+                                        border: InputBorder.none,
+                                        fillColor: Colors.white,
+                                        filled: true),
+                                    hint: Padding(
+                                      padding: const EdgeInsets.only(left: 0),
+                                      child: Text(
+                                        'Select Role',
+                                        style: TextStyle(color: Colors.black),
+                                      ),
+                                    ),
+                                    items:
+                                        List.generate((roleList.length), (a) {
+                                      return DropdownMenuItem(
+                                        child: Text(roleList[a]),
+                                        value: roleList[a],
+                                      );
+                                    }),
+                                    onChanged: (value) {
+                                      setState(() {
+                                        if (value == 'Pharmacy') {
+                                          selectedRole = 'pharmacy_owner';
+                                        } else {
+                                          selectedRole = 'lab_owner';
+                                        }
+                                      });
+                                    },
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 20.0),
+
                               ///...........Email....................///
                               EntryField(
                                 hint: 'Email',
@@ -94,7 +142,7 @@ class _PasswordEmailState extends State<PasswordEmail> {
                                       passwordEmailService,
                                       {
                                         'email': forgetEmailController.text,
-                                        'role': storageBox!.read('role'),
+                                        'role': selectedRole,
                                       },
                                       true,
                                       forgotPasswordEmailRepo,

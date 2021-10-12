@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:doctoworld_seller/Controllers/loading_controller.dart';
 import 'package:doctoworld_seller/Data/global_data.dart';
 import 'package:doctoworld_seller/Repositories/singup_repo.dart';
 import 'package:doctoworld_seller/Services/post_method_call.dart';
@@ -64,11 +65,13 @@ verifyOTP(
     } else {
       Get.snackbar('Error', 'Something went wrong.',
           snackPosition: SnackPosition.BOTTOM, backgroundColor: Colors.white);
+      Get.find<LoaderController>().updateFormController(false);
       print("Error");
     }
     print('Credential ---->> ${credential}');
   } catch (e) {
     print('Exception ->> $e');
+    Get.find<LoaderController>().updateFormController(false);
     Get.snackbar('Try Again', 'Verification code is wrong',
         snackPosition: SnackPosition.BOTTOM);
   }

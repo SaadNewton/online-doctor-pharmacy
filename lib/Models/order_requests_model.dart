@@ -781,7 +781,7 @@ class Customer {
   dynamic? _location;
   dynamic? _status;
   dynamic? _isActive;
-  String? _isProfileComplete;
+  int? _isProfileComplete;
   String? _createdAt;
   String? _updatedAt;
 
@@ -802,7 +802,7 @@ class Customer {
   dynamic? get location => _location;
   dynamic? get status => _status;
   dynamic? get isActive => _isActive;
-  String? get isProfileComplete => _isProfileComplete;
+  int? get isProfileComplete => _isProfileComplete;
   String? get createdAt => _createdAt;
   String? get updatedAt => _updatedAt;
 
@@ -824,7 +824,7 @@ class Customer {
       dynamic? location,
       dynamic? status,
       dynamic? isActive,
-      String? isProfileComplete,
+      int? isProfileComplete,
       String? createdAt,
       String? updatedAt}) {
     _id = id;

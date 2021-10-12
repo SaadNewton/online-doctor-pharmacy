@@ -4,6 +4,7 @@ import 'package:doctoworld_seller/Components/custom_dialog.dart';
 import 'package:doctoworld_seller/Controllers/loading_controller.dart';
 import 'package:doctoworld_seller/Models/forget_password_email_verify_model.dart';
 import 'package:doctoworld_seller/Theme/colors.dart';
+import 'package:doctoworld_seller/UI/forget_password.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,6 +17,7 @@ forgotPasswordEmailVerifyRepo(
     forgetPasswordEmailVerifyModel =
         ForgetPasswordEmailVerifyModel.fromJson(response);
     if (forgetPasswordEmailVerifyModel.status == true) {
+      Get.to(ForgetPassword());
       print(
           'Password Email verify Message------>> ${forgetPasswordEmailVerifyModel.message}');
     } else {

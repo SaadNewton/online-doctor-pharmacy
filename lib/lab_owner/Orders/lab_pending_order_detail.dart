@@ -15,6 +15,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:maps_launcher/maps_launcher.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
 String? orderStatusChanger;
@@ -210,13 +211,55 @@ class _LabPendingOrderDetailState extends State<LabPendingOrderDetail> {
                                 SizedBox(
                                   height: 10,
                                 ),
-                                Text(
-                                  '${widget.labOrderDetail!.orderShipping!.address}',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle1!
-                                      .copyWith(),
+                                Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        '${widget.labOrderDetail!.orderShipping!.address}',
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .subtitle1!
+                                            .copyWith(),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    widget.labOrderDetail!.orderShipping!.lat !=
+                                                null &&
+                                            widget.labOrderDetail!
+                                                    .orderShipping!.long !=
+                                                null
+                                        ? IconButton(
+                                            onPressed: () {
+                                              MapsLauncher.launchCoordinates(
+                                                  double.parse(widget
+                                                      .labOrderDetail!
+                                                      .orderShipping!
+                                                      .lat!
+                                                      .toString()),
+                                                  double.parse(widget
+                                                      .labOrderDetail!
+                                                      .orderShipping!
+                                                      .long!
+                                                      .toString()),
+                                                  'Check Location from Here');
+                                            },
+                                            icon: Icon(
+                                              Icons.location_on,
+                                              color: Theme.of(context)
+                                                  .primaryColor,
+                                            ))
+                                        : SizedBox()
+                                  ],
                                 ),
+                                // Text(
+                                //   '${widget.labOrderDetail!.orderShipping!.address}',
+                                //   style: Theme.of(context)
+                                //       .textTheme
+                                //       .subtitle1!
+                                //       .copyWith(),
+                                // ),
                                 SizedBox(
                                   height: 15,
                                 ),
@@ -335,7 +378,7 @@ class _LabPendingOrderDetailState extends State<LabPendingOrderDetail> {
                               ? SizedBox()
                               : Padding(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 80.0, vertical: 8.0),
+                                      horizontal: 40.0, vertical: 8.0),
                                   child: CustomButton(
                                     label: buttonText(context, modelController),
                                     onTap: () {

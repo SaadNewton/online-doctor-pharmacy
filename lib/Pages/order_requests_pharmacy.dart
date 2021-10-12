@@ -72,7 +72,7 @@ class _NewOrdersState extends State<NewOrders> {
                             ListTile(
                               leading: FadedScaleAnimation(
                                 Image.asset(
-                                  'assets/test image.png',
+                                  'assets/medicine-icon.png',
                                   height: 40,
                                   width: 40,
                                 ),

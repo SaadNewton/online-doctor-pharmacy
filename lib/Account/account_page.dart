@@ -81,7 +81,8 @@ class _AccountPageState extends State<AccountPage> {
                   child: FadedScaleAnimation(
                     userDetailModel!.data!.imagePath == null ||
                             userDetailModel == null
-                        ? Image.asset('assets/seller img/1.png', scale: 3.5)
+                        ? Image.asset('assets/pharmacy-building.jpg',
+                            scale: 3.5)
                         : Image.network(
                             "$imageBaseUrl${userDetailModel!.data!.imagePath!}",
                             height: 150,

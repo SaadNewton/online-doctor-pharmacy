@@ -23,6 +23,7 @@ class AcceptedOrderInfo extends StatefulWidget {
   AcceptedOrderInfo({
     this.acceptedOrderDetail,
   });
+
   @override
   _AcceptedOrderInfoState createState() => _AcceptedOrderInfoState();
 }
@@ -40,12 +41,12 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                 widget.acceptedOrderDetail!.orderProduct![index].imagePath ==
                         null
                     ? Image.asset(
-                        'assets/test image.png',
+                        'assets/medicine-icon.png',
                         height: 40,
                         width: 40,
                       )
                     : Image.network(
-                        '$imageBaseUrl${widget.acceptedOrderDetail!.orderProduct!}',
+                        '$imageBaseUrl${widget.acceptedOrderDetail!.orderProduct![index].imagePath}',
                         height: 40,
                         width: 40,
                         fit: BoxFit.fill,
@@ -69,7 +70,9 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
   @override
   void initState() {
     // TODO: implement initState
-
+    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+      Get.find<LoaderController>().updateFormController(false);
+    });
     getMethod(
         context,
         getNotifyTokenService,
@@ -138,7 +141,7 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                     ListTile(
                       leading: FadedScaleAnimation(
                         Image.asset(
-                          'assets/test image.png',
+                          'assets/medicine-icon.png',
                           height: 40,
                           width: 40,
                         ),

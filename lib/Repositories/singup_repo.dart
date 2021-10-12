@@ -4,6 +4,7 @@ import 'package:doctoworld_seller/Components/custom_dialog.dart';
 import 'package:doctoworld_seller/Controllers/loading_controller.dart';
 import 'package:doctoworld_seller/Data/global_data.dart';
 import 'package:doctoworld_seller/Models/signup_userdata_model.dart';
+import 'package:doctoworld_seller/Models/user_detail_model.dart';
 import 'package:doctoworld_seller/Storage/local_Storage.dart';
 import 'package:doctoworld_seller/Theme/colors.dart';
 import 'package:doctoworld_seller/lab_owner/profile_wizard/lab_profile_wizard.dart';
@@ -19,6 +20,8 @@ getSignupData(
   if (responseCheck) {
     Get.find<LoaderController>().updateFormController(false);
     signupUserdataModel = SignupUserdataModel.fromJson(response);
+    userDetailModel = UserDetailModel.fromJson(response);
+
     if (signupUserdataModel!.status == true) {
       storeDataLocally('session', 'active');
       storeDataLocally('authToken', signupUserdataModel!.data!.auth!.token);

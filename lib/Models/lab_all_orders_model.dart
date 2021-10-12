@@ -1,4 +1,4 @@
-/// data : [{"id":8,"customer_id":1,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"700","total_price":"700","shipping_price":"0","tax":"0","discount":null,"status":"pending","lab_id":11,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"created_at":"2021-09-23T09:40:53.000000Z","updated_at":"2021-09-23T09:40:53.000000Z","order_product":[{"id":4,"order_id":8,"product_id":36,"category_id":22,"company_id":null,"name":"PCR Test","salt_name":null,"image_path":"assets/admin/lab/1632389647_scaled_84255822-fba4-45bc-9ae5-45e0cf9c659f421084129.jpg","retail_price":null,"sale_price":"700","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-09-23T09:40:53.000000Z","updated_at":"2021-09-23T09:40:53.000000Z"}],"order_shipping":{"id":6,"order_id":8,"name":"Muhammad Aftab ur Rehman","email":null,"company_name":null,"phone_number":"+923217858824","address":"P#215 Street#8 Redux Road Nisar Colony Samnabad","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-09-12T23:46:38.000000Z","updated_at":"2021-09-12T23:46:38.000000Z"}}]
+/// data : [{"id":1,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Jazz Cash","sub_total":"1240","total_price":"1240","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"delivered","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-04T08:25:13.000000Z","updated_at":"2021-10-04T08:32:51.000000Z","order_product":[{"id":1,"order_id":1,"product_id":1,"category_id":1,"company_id":null,"name":"PCR","salt_name":null,"image_path":"assets/admin/lab/1627543405_Doctor.jpg","retail_price":null,"sale_price":"240","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-04T08:25:13.000000Z","updated_at":"2021-10-04T08:25:13.000000Z"},{"id":2,"order_id":1,"product_id":3,"category_id":3,"company_id":null,"name":"Diabties Test","salt_name":null,"image_path":"assets/admin/lab/1626680829_mbbs.jpg","retail_price":null,"sale_price":"500","item_type_name":null,"sku":null,"qty":"2","potency":null,"type":"test","created_at":"2021-10-04T08:25:13.000000Z","updated_at":"2021-10-04T08:25:13.000000Z"}],"order_shipping":{"id":1,"order_id":1,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-04T08:25:13.000000Z","updated_at":"2021-10-04T08:25:13.000000Z"}},{"id":13,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"400","total_price":"400","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"delivered","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-04T12:02:59.000000Z","updated_at":"2021-10-05T11:57:15.000000Z","order_product":[{"id":19,"order_id":13,"product_id":6,"category_id":3,"company_id":null,"name":"D-2","salt_name":null,"image_path":"assets/admin/lab/1627539206_download.jpg","retail_price":null,"sale_price":"400","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-04T12:02:59.000000Z","updated_at":"2021-10-04T12:02:59.000000Z"}],"order_shipping":{"id":13,"order_id":13,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-04T12:02:59.000000Z","updated_at":"2021-10-04T12:02:59.000000Z"}},{"id":14,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"240","total_price":"240","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"in_progress","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-04T12:04:47.000000Z","updated_at":"2021-10-05T11:57:09.000000Z","order_product":[{"id":20,"order_id":14,"product_id":1,"category_id":1,"company_id":null,"name":"PCR","salt_name":null,"image_path":"assets/admin/lab/1627543405_Doctor.jpg","retail_price":null,"sale_price":"240","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-04T12:04:47.000000Z","updated_at":"2021-10-04T12:04:47.000000Z"}],"order_shipping":{"id":14,"order_id":14,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-04T12:04:47.000000Z","updated_at":"2021-10-04T12:04:47.000000Z"}},{"id":15,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"240","total_price":"240","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"sample_collected","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-04T12:08:06.000000Z","updated_at":"2021-10-05T11:56:55.000000Z","order_product":[{"id":21,"order_id":15,"product_id":1,"category_id":1,"company_id":null,"name":"PCR","salt_name":null,"image_path":"assets/admin/lab/1627543405_Doctor.jpg","retail_price":null,"sale_price":"240","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-04T12:08:06.000000Z","updated_at":"2021-10-04T12:08:06.000000Z"}],"order_shipping":{"id":15,"order_id":15,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-04T12:08:06.000000Z","updated_at":"2021-10-04T12:08:06.000000Z"}},{"id":16,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"400","total_price":"400","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"delivered","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-04T12:09:58.000000Z","updated_at":"2021-10-05T05:19:28.000000Z","order_product":[{"id":22,"order_id":16,"product_id":6,"category_id":3,"company_id":null,"name":"D-2","salt_name":null,"image_path":"assets/admin/lab/1627539206_download.jpg","retail_price":null,"sale_price":"400","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-04T12:09:58.000000Z","updated_at":"2021-10-04T12:09:58.000000Z"}],"order_shipping":{"id":16,"order_id":16,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-04T12:09:58.000000Z","updated_at":"2021-10-04T12:09:58.000000Z"}},{"id":25,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"500","total_price":"500","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"pending","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-05T11:31:19.000000Z","updated_at":"2021-10-05T11:31:19.000000Z","order_product":[{"id":27,"order_id":25,"product_id":3,"category_id":3,"company_id":null,"name":"Diabties Test","salt_name":null,"image_path":"assets/admin/lab/1626680829_mbbs.jpg","retail_price":null,"sale_price":"500","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-05T11:31:19.000000Z","updated_at":"2021-10-05T11:31:19.000000Z"}],"order_shipping":{"id":25,"order_id":25,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-05T11:31:19.000000Z","updated_at":"2021-10-05T11:31:19.000000Z"}},{"id":27,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"240","total_price":"240","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"pending","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-05T11:48:11.000000Z","updated_at":"2021-10-05T11:48:11.000000Z","order_product":[{"id":29,"order_id":27,"product_id":1,"category_id":1,"company_id":null,"name":"PCR","salt_name":null,"image_path":"assets/admin/lab/1627543405_Doctor.jpg","retail_price":null,"sale_price":"240","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-05T11:48:11.000000Z","updated_at":"2021-10-05T11:48:11.000000Z"}],"order_shipping":{"id":27,"order_id":27,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-05T11:48:11.000000Z","updated_at":"2021-10-05T11:48:11.000000Z"}},{"id":28,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"500","total_price":"500","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"pending","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-05T12:03:15.000000Z","updated_at":"2021-10-05T12:03:15.000000Z","order_product":[{"id":30,"order_id":28,"product_id":3,"category_id":3,"company_id":null,"name":"Diabties Test","salt_name":null,"image_path":"assets/admin/lab/1626680829_mbbs.jpg","retail_price":null,"sale_price":"500","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-05T12:03:15.000000Z","updated_at":"2021-10-05T12:03:15.000000Z"}],"order_shipping":{"id":28,"order_id":28,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-05T12:03:15.000000Z","updated_at":"2021-10-05T12:03:15.000000Z"}},{"id":29,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Easy Paisa","sub_total":"240","total_price":"290","commission_price":null,"pay_total":null,"shipping_price":"50","tax":"0","discount":null,"status":"pending","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-05T12:14:15.000000Z","updated_at":"2021-10-05T12:14:15.000000Z","order_product":[{"id":31,"order_id":29,"product_id":1,"category_id":1,"company_id":null,"name":"PCR","salt_name":null,"image_path":"assets/admin/lab/1627543405_Doctor.jpg","retail_price":null,"sale_price":"240","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-05T12:14:15.000000Z","updated_at":"2021-10-05T12:14:15.000000Z"}],"order_shipping":{"id":29,"order_id":29,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Hakeem Sultan Ahmad Dawoodi Road","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-05T12:14:15.000000Z","updated_at":"2021-10-05T12:14:15.000000Z"}},{"id":34,"customer_id":2,"session_id":null,"customer_name":null,"shipping_method":null,"payment_method":"Cash on Delivery","sub_total":"500","total_price":"500","commission_price":null,"pay_total":null,"shipping_price":"0","tax":"0","discount":null,"status":"pending","lab_id":1,"pharmacy_id":null,"is_prescription":0,"is_order_approved":0,"image_path1":null,"image_path2":null,"remarks":null,"created_at":"2021-10-11T07:25:27.000000Z","updated_at":"2021-10-11T07:25:27.000000Z","order_product":[{"id":39,"order_id":34,"product_id":3,"category_id":3,"company_id":null,"name":"Diabties Test","salt_name":null,"image_path":"assets/admin/lab/1626680829_mbbs.jpg","retail_price":null,"sale_price":"500","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-11T07:25:27.000000Z","updated_at":"2021-10-11T07:25:27.000000Z"}],"order_shipping":{"id":34,"order_id":34,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Lahore-Islamabad Motorway, Sabzazar Block E Sabzazar Housing Scheme Phase 1 & 2 Lahore, Pakistan","lat":"58.16484329999999","long":"27.2224028","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-11T07:25:27.000000Z","updated_at":"2021-10-11T07:25:27.000000Z"}}]
 /// status : true
 /// success : 1
 /// message : "Fetching record"
@@ -49,28 +49,31 @@ class LabAllOrdersModel {
   }
 }
 
-/// id : 8
-/// customer_id : 1
+/// id : 1
+/// customer_id : 2
 /// session_id : null
 /// customer_name : null
 /// shipping_method : null
-/// payment_method : "Cash on Delivery"
-/// sub_total : "700"
-/// total_price : "700"
+/// payment_method : "Jazz Cash"
+/// sub_total : "1240"
+/// total_price : "1240"
+/// commission_price : null
+/// pay_total : null
 /// shipping_price : "0"
 /// tax : "0"
 /// discount : null
-/// status : "pending"
-/// lab_id : 11
+/// status : "delivered"
+/// lab_id : 1
 /// pharmacy_id : null
 /// is_prescription : 0
 /// is_order_approved : 0
 /// image_path1 : null
 /// image_path2 : null
-/// created_at : "2021-09-23T09:40:53.000000Z"
-/// updated_at : "2021-09-23T09:40:53.000000Z"
-/// order_product : [{"id":4,"order_id":8,"product_id":36,"category_id":22,"company_id":null,"name":"PCR Test","salt_name":null,"image_path":"assets/admin/lab/1632389647_scaled_84255822-fba4-45bc-9ae5-45e0cf9c659f421084129.jpg","retail_price":null,"sale_price":"700","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-09-23T09:40:53.000000Z","updated_at":"2021-09-23T09:40:53.000000Z"}]
-/// order_shipping : {"id":6,"order_id":8,"name":"Muhammad Aftab ur Rehman","email":null,"company_name":null,"phone_number":"+923217858824","address":"P#215 Street#8 Redux Road Nisar Colony Samnabad","city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-09-12T23:46:38.000000Z","updated_at":"2021-09-12T23:46:38.000000Z"}
+/// remarks : null
+/// created_at : "2021-10-04T08:25:13.000000Z"
+/// updated_at : "2021-10-04T08:32:51.000000Z"
+/// order_product : [{"id":1,"order_id":1,"product_id":1,"category_id":1,"company_id":null,"name":"PCR","salt_name":null,"image_path":"assets/admin/lab/1627543405_Doctor.jpg","retail_price":null,"sale_price":"240","item_type_name":null,"sku":null,"qty":"1","potency":null,"type":"test","created_at":"2021-10-04T08:25:13.000000Z","updated_at":"2021-10-04T08:25:13.000000Z"},{"id":2,"order_id":1,"product_id":3,"category_id":3,"company_id":null,"name":"Diabties Test","salt_name":null,"image_path":"assets/admin/lab/1626680829_mbbs.jpg","retail_price":null,"sale_price":"500","item_type_name":null,"sku":null,"qty":"2","potency":null,"type":"test","created_at":"2021-10-04T08:25:13.000000Z","updated_at":"2021-10-04T08:25:13.000000Z"}]
+/// order_shipping : {"id":1,"order_id":1,"name":"Bilal Hassan","email":null,"company_name":null,"phone_number":"+923477459552","address":"Faisalabad - Samundri Road, Faisalabad, Pakistan","lat":null,"long":null,"city":null,"country":null,"state":null,"postal_code":null,"created_at":"2021-10-04T08:25:13.000000Z","updated_at":"2021-10-04T08:25:13.000000Z"}
 
 class LabOrderDetail {
   int? _id;
@@ -81,6 +84,8 @@ class LabOrderDetail {
   String? _paymentMethod;
   String? _subTotal;
   String? _totalPrice;
+  dynamic? _commissionPrice;
+  dynamic? _payTotal;
   String? _shippingPrice;
   String? _tax;
   dynamic? _discount;
@@ -91,6 +96,7 @@ class LabOrderDetail {
   int? _isOrderApproved;
   dynamic? _imagePath1;
   dynamic? _imagePath2;
+  dynamic? _remarks;
   String? _createdAt;
   String? _updatedAt;
   List<Order_product>? _orderProduct;
@@ -104,6 +110,8 @@ class LabOrderDetail {
   String? get paymentMethod => _paymentMethod;
   String? get subTotal => _subTotal;
   String? get totalPrice => _totalPrice;
+  dynamic? get commissionPrice => _commissionPrice;
+  dynamic? get payTotal => _payTotal;
   String? get shippingPrice => _shippingPrice;
   String? get tax => _tax;
   dynamic? get discount => _discount;
@@ -114,6 +122,7 @@ class LabOrderDetail {
   int? get isOrderApproved => _isOrderApproved;
   dynamic? get imagePath1 => _imagePath1;
   dynamic? get imagePath2 => _imagePath2;
+  dynamic? get remarks => _remarks;
   String? get createdAt => _createdAt;
   String? get updatedAt => _updatedAt;
   List<Order_product>? get orderProduct => _orderProduct;
@@ -128,6 +137,8 @@ class LabOrderDetail {
       String? paymentMethod,
       String? subTotal,
       String? totalPrice,
+      dynamic? commissionPrice,
+      dynamic? payTotal,
       String? shippingPrice,
       String? tax,
       dynamic? discount,
@@ -138,6 +149,7 @@ class LabOrderDetail {
       int? isOrderApproved,
       dynamic? imagePath1,
       dynamic? imagePath2,
+      dynamic? remarks,
       String? createdAt,
       String? updatedAt,
       List<Order_product>? orderProduct,
@@ -150,6 +162,8 @@ class LabOrderDetail {
     _paymentMethod = paymentMethod;
     _subTotal = subTotal;
     _totalPrice = totalPrice;
+    _commissionPrice = commissionPrice;
+    _payTotal = payTotal;
     _shippingPrice = shippingPrice;
     _tax = tax;
     _discount = discount;
@@ -160,6 +174,7 @@ class LabOrderDetail {
     _isOrderApproved = isOrderApproved;
     _imagePath1 = imagePath1;
     _imagePath2 = imagePath2;
+    _remarks = remarks;
     _createdAt = createdAt;
     _updatedAt = updatedAt;
     _orderProduct = orderProduct;
@@ -175,6 +190,8 @@ class LabOrderDetail {
     _paymentMethod = json['payment_method'];
     _subTotal = json['sub_total'];
     _totalPrice = json['total_price'];
+    _commissionPrice = json['commission_price'];
+    _payTotal = json['pay_total'];
     _shippingPrice = json['shipping_price'];
     _tax = json['tax'];
     _discount = json['discount'];
@@ -185,6 +202,7 @@ class LabOrderDetail {
     _isOrderApproved = json['is_order_approved'];
     _imagePath1 = json['image_path1'];
     _imagePath2 = json['image_path2'];
+    _remarks = json['remarks'];
     _createdAt = json['created_at'];
     _updatedAt = json['updated_at'];
     if (json['order_product'] != null) {
@@ -208,6 +226,8 @@ class LabOrderDetail {
     map['payment_method'] = _paymentMethod;
     map['sub_total'] = _subTotal;
     map['total_price'] = _totalPrice;
+    map['commission_price'] = _commissionPrice;
+    map['pay_total'] = _payTotal;
     map['shipping_price'] = _shippingPrice;
     map['tax'] = _tax;
     map['discount'] = _discount;
@@ -218,6 +238,7 @@ class LabOrderDetail {
     map['is_order_approved'] = _isOrderApproved;
     map['image_path1'] = _imagePath1;
     map['image_path2'] = _imagePath2;
+    map['remarks'] = _remarks;
     map['created_at'] = _createdAt;
     map['updated_at'] = _updatedAt;
     if (_orderProduct != null) {
@@ -230,19 +251,21 @@ class LabOrderDetail {
   }
 }
 
-/// id : 6
-/// order_id : 8
-/// name : "Muhammad Aftab ur Rehman"
+/// id : 1
+/// order_id : 1
+/// name : "Bilal Hassan"
 /// email : null
 /// company_name : null
-/// phone_number : "+923217858824"
-/// address : "P#215 Street#8 Redux Road Nisar Colony Samnabad"
+/// phone_number : "+923477459552"
+/// address : "Faisalabad - Samundri Road, Faisalabad, Pakistan"
+/// lat : null
+/// long : null
 /// city : null
 /// country : null
 /// state : null
 /// postal_code : null
-/// created_at : "2021-09-12T23:46:38.000000Z"
-/// updated_at : "2021-09-12T23:46:38.000000Z"
+/// created_at : "2021-10-04T08:25:13.000000Z"
+/// updated_at : "2021-10-04T08:25:13.000000Z"
 
 class Order_shipping {
   int? _id;
@@ -252,6 +275,8 @@ class Order_shipping {
   dynamic? _companyName;
   String? _phoneNumber;
   String? _address;
+  dynamic? _lat;
+  dynamic? _long;
   dynamic? _city;
   dynamic? _country;
   dynamic? _state;
@@ -266,6 +291,8 @@ class Order_shipping {
   dynamic? get companyName => _companyName;
   String? get phoneNumber => _phoneNumber;
   String? get address => _address;
+  dynamic? get lat => _lat;
+  dynamic? get long => _long;
   dynamic? get city => _city;
   dynamic? get country => _country;
   dynamic? get state => _state;
@@ -281,6 +308,8 @@ class Order_shipping {
       dynamic? companyName,
       String? phoneNumber,
       String? address,
+      dynamic? lat,
+      dynamic? long,
       dynamic? city,
       dynamic? country,
       dynamic? state,
@@ -294,6 +323,8 @@ class Order_shipping {
     _companyName = companyName;
     _phoneNumber = phoneNumber;
     _address = address;
+    _lat = lat;
+    _long = long;
     _city = city;
     _country = country;
     _state = state;
@@ -310,6 +341,8 @@ class Order_shipping {
     _companyName = json['company_name'];
     _phoneNumber = json['phone_number'];
     _address = json['address'];
+    _lat = json['lat'];
+    _long = json['long'];
     _city = json['city'];
     _country = json['country'];
     _state = json['state'];
@@ -327,6 +360,8 @@ class Order_shipping {
     map['company_name'] = _companyName;
     map['phone_number'] = _phoneNumber;
     map['address'] = _address;
+    map['lat'] = _lat;
+    map['long'] = _long;
     map['city'] = _city;
     map['country'] = _country;
     map['state'] = _state;
@@ -337,23 +372,23 @@ class Order_shipping {
   }
 }
 
-/// id : 4
-/// order_id : 8
-/// product_id : 36
-/// category_id : 22
+/// id : 1
+/// order_id : 1
+/// product_id : 1
+/// category_id : 1
 /// company_id : null
-/// name : "PCR Test"
+/// name : "PCR"
 /// salt_name : null
-/// image_path : "assets/admin/lab/1632389647_scaled_84255822-fba4-45bc-9ae5-45e0cf9c659f421084129.jpg"
+/// image_path : "assets/admin/lab/1627543405_Doctor.jpg"
 /// retail_price : null
-/// sale_price : "700"
+/// sale_price : "240"
 /// item_type_name : null
 /// sku : null
 /// qty : "1"
 /// potency : null
 /// type : "test"
-/// created_at : "2021-09-23T09:40:53.000000Z"
-/// updated_at : "2021-09-23T09:40:53.000000Z"
+/// created_at : "2021-10-04T08:25:13.000000Z"
+/// updated_at : "2021-10-04T08:25:13.000000Z"
 
 class Order_product {
   int? _id;

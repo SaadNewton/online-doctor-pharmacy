@@ -1,5 +1,6 @@
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:doctoworld_seller/Components/custom_button.dart';
+import 'package:doctoworld_seller/Components/custom_dialog.dart';
 import 'package:doctoworld_seller/Components/entry_field.dart';
 import 'package:doctoworld_seller/Controllers/loading_controller.dart';
 import 'package:doctoworld_seller/Data/global_data.dart';
@@ -7,8 +8,11 @@ import 'package:doctoworld_seller/Locale/locale.dart';
 import 'package:doctoworld_seller/Repositories/phone_email_repo.dart';
 import 'package:doctoworld_seller/Services/post_method_call.dart';
 import 'package:doctoworld_seller/Services/service_urls.dart';
+import 'package:doctoworld_seller/Theme/colors.dart';
 import 'package:doctoworld_seller/UI/login_ui.dart';
+import 'package:doctoworld_seller/UI/terms_and_conditions.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -27,6 +31,7 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
 
   var currentPosition;
   bool? obSecureText;
+  bool? selected = false;
 
   List<String> roleList = [
     'Pharmacy',
@@ -67,7 +72,7 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
                         )),
 
                         Padding(
-                          padding: const EdgeInsets.all(5.0),
+                          padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
                           child: Material(
                             child: DropdownButtonFormField<String>(
                               validator: (v) {
@@ -82,7 +87,7 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
                                   fillColor: Colors.white,
                                   filled: true),
                               hint: Padding(
-                                padding: const EdgeInsets.only(left: 10),
+                                padding: const EdgeInsets.only(left: 0),
                                 child: Text(
                                   'Select Role',
                                   style: TextStyle(color: Colors.black),
@@ -238,6 +243,48 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
                         ),
                         SizedBox(height: 20.0),
 
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            IconButton(
+                              icon: Icon(
+                                selected!
+                                    ? Icons.check_box
+                                    : Icons.check_box_outline_blank,
+                                color: Colors.blue,
+                              ),
+                              onPressed: () {
+                                setState(() {
+                                  selected = !selected!;
+                                });
+                              },
+                            ),
+                            SizedBox(width: 8),
+                            RichText(
+                              text: TextSpan(
+                                  text: 'I accept the',
+                                  style: TextStyle(
+                                      color: Colors.black, fontSize: 14),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                        text: ' Terms and Conditions',
+                                        style: TextStyle(
+                                            color: Colors.blueAccent,
+                                            fontSize: 16),
+                                        recognizer: TapGestureRecognizer()
+                                          ..onTap = () {
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        TermsAndConditions()));
+                                          })
+                                  ]),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 20.0),
+
                         CustomButton(
                           onTap: () {
                             FocusScopeNode currentFocus =
@@ -246,18 +293,36 @@ class _RegistrationUI_signUpState extends State<RegistrationUI_signUp> {
                               currentFocus.unfocus();
                             }
                             if (signKey.currentState!.validate()) {
-                              Get.find<LoaderController>()
-                                  .updateFormController(true);
-                              postMethod(
-                                  context,
-                                  phoneEmailCheckService,
-                                  {
-                                    'phone': phoneController.text,
-                                    'email': emailController.text,
-                                    'role': signUpSelectedRole,
-                                  },
-                                  false,
-                                  phoneEmailCheckRepo);
+                              if (selected == true) {
+                                Get.find<LoaderController>()
+                                    .updateFormController(true);
+                                postMethod(
+                                    context,
+                                    phoneEmailCheckService,
+                                    {
+                                      'phone': phoneController.text,
+                                      'email': emailController.text,
+                                      'role': signUpSelectedRole,
+                                    },
+                                    false,
+                                    phoneEmailCheckRepo);
+                              } else {
+                                showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return CustomDialogBox(
+                                        title: 'Failed',
+                                        titleColor: customDialogErrorColor,
+                                        descriptions:
+                                            'Please Accept Terms & Conditions',
+                                        text: 'Ok',
+                                        functionCall: () {
+                                          Navigator.pop(context);
+                                        },
+                                        img: 'assets/dialog_error.svg',
+                                      );
+                                    });
+                              }
                             }
                           },
                         ),

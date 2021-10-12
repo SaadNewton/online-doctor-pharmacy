@@ -44,3 +44,5 @@ List<String> itemTypes = [];
 List<String> itemTypePrice = [];
 
 String? selectedValue;
+
+String? selectedRole;

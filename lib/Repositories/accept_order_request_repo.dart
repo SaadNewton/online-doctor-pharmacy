@@ -41,6 +41,7 @@ acceptOrderRequest(
       ));
       Get.snackbar('Accepted', acceptOrderModel.message,
           snackPosition: SnackPosition.BOTTOM, backgroundColor: Colors.white);
+      Get.find<LoaderController>().updateFormController(false);
       getMethod(
           context,
           getAllAcceptedOrdersService,
@@ -50,9 +51,11 @@ acceptOrderRequest(
     } else {
       Get.snackbar('Failed', acceptOrderModel.message,
           snackPosition: SnackPosition.BOTTOM, backgroundColor: Colors.white);
+      Get.find<LoaderController>().updateFormController(false);
     }
   } else {
     Get.snackbar('Failed', 'Something went wrong.',
         snackPosition: SnackPosition.BOTTOM, backgroundColor: Colors.white);
+    Get.find<LoaderController>().updateFormController(false);
   }
 }
