@@ -867,7 +867,7 @@ class Customer {
     _location = json['location'];
     _status = json['status'];
     _isActive = json['is_active'];
-    _isProfileComplete = json['is_profile_complete'];
+    _isProfileComplete = int.parse(json['is_profile_complete'].toString());
     _createdAt = json['created_at'];
     _updatedAt = json['updated_at'];
   }

@@ -2,7 +2,6 @@ import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:doctoworld_seller/Data/global_data.dart';
 import 'package:doctoworld_seller/Locale/locale.dart';
 import 'package:doctoworld_seller/Repositories/get_user_detail_info.dart';
-import 'package:doctoworld_seller/Routes/routes.dart';
 import 'package:doctoworld_seller/Services/service_urls.dart';
 import 'package:doctoworld_seller/Storage/local_Storage.dart';
 import 'package:doctoworld_seller/UI/change_password.dart';
@@ -40,9 +39,9 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     var locale = AppLocalizations.of(context)!;
     List<MenuTile> _menu = [
-      MenuTile(locale.tnC, locale.companyPolicies, Icons.assignment, () {
-        Navigator.pushNamed(context, PageRoutes.tncPage);
-      }),
+      // MenuTile(locale.tnC, locale.companyPolicies, Icons.assignment, () {
+      //   Navigator.pushNamed(context, PageRoutes.tncPage);
+      // }),
       MenuTile(locale.contactUs, locale.letUsHelpYou, Icons.mail, () {
         Get.to(ContactUs());
       }),
@@ -100,7 +99,7 @@ class _AccountPageState extends State<AccountPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        userDetailModel == null
+                        userDetailModel != null
                             ? userDetailModel!.data!.name!
                             : 'User',
                         style: Theme.of(context).textTheme.subtitle1!.copyWith(
@@ -117,6 +116,14 @@ class _AccountPageState extends State<AccountPage> {
                               TextSpan(
                                   text:
                                       "\n${userDetailModel!.data!.ownerPhone}",
+                                  style: Theme.of(context).textTheme.subtitle2),
+                            ])),
+                      userDetailModel == null
+                          ? SizedBox()
+                          : RichText(
+                              text: TextSpan(children: <TextSpan>[
+                              TextSpan(
+                                  text: "\n${userDetailModel!.data!.address}",
                                   style: Theme.of(context).textTheme.subtitle2),
                             ])),
                       SizedBox(

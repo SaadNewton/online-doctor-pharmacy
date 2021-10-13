@@ -130,55 +130,55 @@ class _EditDetailsState extends State<EditDetails> {
                               child: Column(
                                 children: [
                                   ///............. image.............///
-                                  _image == null || userDetailModel != null
-                                      ? InkWell(
-                                          onTap: () {
-                                            getImage();
-                                          },
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                                color: Colors.grey
-                                                    .withOpacity(0.2),
-                                                shape: BoxShape.rectangle),
-                                            height: 150,
-                                            width: 150,
-                                            child: ClipRRect(
-                                              child: Image.network(
-                                                '$imageBaseUrl${userDetailModel!.data!.imagePath}',
-                                                width: 100,
-                                                height: 100,
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                        )
-                                      : InkWell(
-                                          onTap: () {
-                                            getImage();
-                                          },
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                                color: Colors.grey
-                                                    .withOpacity(0.2),
-                                                shape: BoxShape.rectangle),
-                                            height: 150,
-                                            width: 150,
-                                            child: ClipRRect(
-                                                // ,
-                                                child: Image.file(
-                                              _image!,
-                                              fit: BoxFit.cover,
-                                            )),
-                                          ),
-                                        ),
-                                  _imageChecker
-                                      ? Text(
-                                          'Image Required',
-                                          style: TextStyle(
-                                              fontSize: 11, color: Colors.red),
-                                        )
-                                      : SizedBox(),
-                                  SizedBox(height: 20),
+                                  // _image == null || userDetailModel != null
+                                  //     ? InkWell(
+                                  //         onTap: () {
+                                  //           getImage();
+                                  //         },
+                                  //         child: Container(
+                                  //           decoration: BoxDecoration(
+                                  //               color: Colors.grey
+                                  //                   .withOpacity(0.2),
+                                  //               shape: BoxShape.rectangle),
+                                  //           height: 150,
+                                  //           width: 150,
+                                  //           child: ClipRRect(
+                                  //             child: Image.network(
+                                  //               '$imageBaseUrl${userDetailModel!.data!.imagePath}',
+                                  //               width: 100,
+                                  //               height: 100,
+                                  //               fit: BoxFit.cover,
+                                  //             ),
+                                  //           ),
+                                  //         ),
+                                  //       )
+                                  //     : InkWell(
+                                  //         onTap: () {
+                                  //           getImage();
+                                  //         },
+                                  //         child: Container(
+                                  //           decoration: BoxDecoration(
+                                  //               color: Colors.grey
+                                  //                   .withOpacity(0.2),
+                                  //               shape: BoxShape.rectangle),
+                                  //           height: 150,
+                                  //           width: 150,
+                                  //           child: ClipRRect(
+                                  //               // ,
+                                  //               child: Image.file(
+                                  //             _image!,
+                                  //             fit: BoxFit.cover,
+                                  //           )),
+                                  //         ),
+                                  //       ),
+                                  // _imageChecker
+                                  //     ? Text(
+                                  //         'Image Required',
+                                  //         style: TextStyle(
+                                  //             fontSize: 11, color: Colors.red),
+                                  //       )
+                                  //     : SizedBox(),
+                                  // SizedBox(height: 20),
 
                                   ///...........Pharmacy Name....................///
                                   EntryField(

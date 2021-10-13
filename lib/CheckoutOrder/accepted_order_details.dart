@@ -495,8 +495,9 @@ class _AcceptedOrderInfoState extends State<AcceptedOrderInfo> {
                             ),
                           ),
                     widget.acceptedOrderDetail!.status == 'delivered' ||
-                            widget.acceptedOrderDetail!.status == 'in_review' ||
-                            widget.acceptedOrderDetail!.status == 'rejected'
+                            widget.acceptedOrderDetail!.status == 'review' ||
+                            widget.acceptedOrderDetail!.status == 'rejected' ||
+                            widget.acceptedOrderDetail!.status == 'pending'
                         ? SizedBox()
                         : Padding(
                             padding: const EdgeInsets.symmetric(

@@ -162,6 +162,9 @@ class _MedicineSearchScreenState extends State<MedicineSearchScreen> {
                                             medicineSearchModel.data[index].id;
                                         medicineSearchDetailData =
                                             medicineSearchModel.data[index];
+                                        priceControllerEdit.text =
+                                            medicineSearchModel
+                                                .data[index].salePrice;
                                         log(medicineSearchModel
                                             .data[index].salePrice
                                             .toString());
@@ -202,9 +205,12 @@ class _MedicineSearchScreenState extends State<MedicineSearchScreen> {
                                               })
                                             : isItemTypeAvailable = '0';
 
-                                        selectedValue = itemTypes[2];
-                                        priceControllerEdit.text =
-                                            itemTypePrice[2];
+                                        medicineSearchModel
+                                                    .data[index].isItemType ==
+                                                '1'
+                                            ? priceControllerEdit.text =
+                                                itemTypePrice[2]
+                                            : isItemTypeAvailable = '0';
 
                                         Get.back();
                                       },

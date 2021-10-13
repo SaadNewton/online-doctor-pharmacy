@@ -4,9 +4,9 @@ import 'package:doctoworld_seller/Components/custom_button.dart';
 import 'package:doctoworld_seller/Components/entry_field.dart';
 import 'package:doctoworld_seller/Controllers/loading_controller.dart';
 import 'package:doctoworld_seller/Services/service_urls.dart';
+import 'package:doctoworld_seller/Storage/local_Storage.dart';
 import 'package:doctoworld_seller/repositories/contact_us_repo.dart';
 import 'package:doctoworld_seller/services/post_method_call.dart';
-import 'package:doctoworld_seller/storage/local_Storage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
@@ -145,8 +145,10 @@ class _ContactUsState extends State<ContactUs> {
                                       context,
                                       contactUsService,
                                       {
-                                        'user_id':
-                                            storageBox.read('customerId'),
+                                        'user_id': storageBox.read('role') ==
+                                                'pharmacy_owner'
+                                            ? storageBox.read('pharmacy_id')
+                                            : storageBox.read('lab_id'),
                                         'name': _contactNameController.text,
                                         'email': _contactEmailController.text,
                                         'subject':

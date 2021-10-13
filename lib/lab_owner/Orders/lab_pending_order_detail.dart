@@ -193,10 +193,6 @@ class _LabPendingOrderDetailState extends State<LabPendingOrderDetail> {
                                 Text(
                                   '${widget.labOrderDetail!.orderShipping!.name}'
                                       .capitalize!,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle1!
-                                      .copyWith(),
                                 ),
                                 SizedBox(
                                   height: 15,
@@ -216,10 +212,6 @@ class _LabPendingOrderDetailState extends State<LabPendingOrderDetail> {
                                     Expanded(
                                       child: Text(
                                         '${widget.labOrderDetail!.orderShipping!.address}',
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .subtitle1!
-                                            .copyWith(),
                                       ),
                                     ),
                                     SizedBox(
@@ -253,13 +245,6 @@ class _LabPendingOrderDetailState extends State<LabPendingOrderDetail> {
                                         : SizedBox()
                                   ],
                                 ),
-                                // Text(
-                                //   '${widget.labOrderDetail!.orderShipping!.address}',
-                                //   style: Theme.of(context)
-                                //       .textTheme
-                                //       .subtitle1!
-                                //       .copyWith(),
-                                // ),
                                 SizedBox(
                                   height: 15,
                                 ),
@@ -275,10 +260,6 @@ class _LabPendingOrderDetailState extends State<LabPendingOrderDetail> {
                                 ),
                                 Text(
                                   '${widget.labOrderDetail!.orderShipping!.phoneNumber}',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle1!
-                                      .copyWith(),
                                 ),
                               ],
                             ),

@@ -127,7 +127,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                                                   .text,
                                           'email': forgetEmailController.text
                                         },
-                                        true,
+                                        false,
                                         forgotPasswordRepo);
                                   }
                                 },

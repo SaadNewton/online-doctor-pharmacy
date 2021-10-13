@@ -107,7 +107,7 @@ String passwordEmailService = baseUrl + "forgot-password-email";
 String passwordEmailVerifyService = baseUrl + 'forgot-password-email-verify';
 
 /// Reset Password
-String resetPasswordService = 'reset-password';
+String resetPasswordService = baseUrl + 'reset-password';
 
 /// Change Password Service
 ///

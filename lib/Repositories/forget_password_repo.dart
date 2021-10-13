@@ -17,7 +17,7 @@ forgotPasswordRepo(
       Get.find<LoaderController>().updateFormController(false);
       Get.snackbar('Done', 'Password Changed Successfully.',
           snackPosition: SnackPosition.BOTTOM, backgroundColor: Colors.white);
-      Get.to(LoginUI());
+      Get.offAll(LoginUI());
       print('Password change Message------>> ${forgetPasswordModel.message}');
     } else {
       log('data ' + response.toString());

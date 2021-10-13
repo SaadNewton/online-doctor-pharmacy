@@ -469,8 +469,7 @@ class _CustomOrderScreenState extends State<CustomOrderScreen> {
                                                                 .orderDetailData
                                                                 .id,
                                                             'products': items,
-                                                            'status':
-                                                                'in_review',
+                                                            'status': 'review',
                                                             'sub_total':
                                                                 subTotal,
                                                             'total_price':
