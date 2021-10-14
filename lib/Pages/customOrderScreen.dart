@@ -206,8 +206,10 @@ class _CustomOrderScreenState extends State<CustomOrderScreen> {
 
                                               // DropDown End
                                               EntryField(
-                                                onTap: () => Get.to(
-                                                    MedicineSearchScreen()),
+                                                onTap: () =>
+                                                    Get.to(MedicineSearchScreen(
+                                                  fromEditOrder: false,
+                                                )),
                                                 controller:
                                                     productNameControllerEdit,
                                                 hint: 'Medicine Name',

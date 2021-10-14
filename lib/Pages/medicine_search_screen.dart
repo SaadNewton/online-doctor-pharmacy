@@ -12,8 +12,16 @@ import 'package:doctoworld_seller/services/service_urls.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+TextEditingController editNameControllerEdit = TextEditingController();
+int editItemsProductId;
+
+TextEditingController editPriceControllerEdit = TextEditingController();
+TextEditingController editQuantityControllerEdit = TextEditingController();
+
 class MedicineSearchScreen extends StatefulWidget {
-  const MedicineSearchScreen({Key key}) : super(key: key);
+  final fromEditOrder;
+
+  const MedicineSearchScreen({Key key, this.fromEditOrder}) : super(key: key);
 
   @override
   _MedicineSearchScreenState createState() => _MedicineSearchScreenState();
@@ -152,65 +160,128 @@ class _MedicineSearchScreenState extends State<MedicineSearchScreen> {
                                         15, 15, 15, 0),
                                     child: InkWell(
                                       onTap: () {
-                                        medicineSearchModel
-                                                    .data[index].isItemType ==
-                                                '1'
-                                            ? isItemTypeAvailable = '1'
-                                            : isItemTypeAvailable = '0';
+                                        if (widget.fromEditOrder) {
+                                          medicineSearchModel
+                                                      .data[index].isItemType ==
+                                                  '1'
+                                              ? isItemTypeAvailable = '1'
+                                              : isItemTypeAvailable = '0';
 
-                                        editProductId =
-                                            medicineSearchModel.data[index].id;
-                                        medicineSearchDetailData =
-                                            medicineSearchModel.data[index];
-                                        priceControllerEdit.text =
-                                            medicineSearchModel
-                                                .data[index].salePrice;
-                                        log(medicineSearchModel
-                                            .data[index].salePrice
-                                            .toString());
-                                        productNameControllerEdit.text =
-                                            medicineSearchModel
-                                                .data[index].name;
-                                        quantityControllerEdit.text = '1';
+                                          editItemsProductId =
+                                              medicineSearchModel
+                                                  .data[index].id;
+                                          medicineSearchDetailData =
+                                              medicineSearchModel.data[index];
+                                          editPriceControllerEdit.text =
+                                              medicineSearchModel
+                                                  .data[index].salePrice;
+                                          log(medicineSearchModel
+                                              .data[index].salePrice
+                                              .toString());
+                                          editNameControllerEdit.text =
+                                              medicineSearchModel
+                                                  .data[index].name;
+                                          editQuantityControllerEdit.text = '1';
 
-                                        medicineSearchModel
-                                                    .data[index].isItemType ==
-                                                '1'
-                                            ? List.generate(
-                                                medicineSearchModel
-                                                    .data[index]
-                                                    .itemPrice
-                                                    .length, (innerIndex) {
-                                                itemTypes.add(
-                                                    medicineSearchModel
-                                                        .data[index]
-                                                        .itemPrice[innerIndex]
-                                                        .type);
-                                              })
-                                            : isItemTypeAvailable = '0';
+                                          medicineSearchModel
+                                                      .data[index].isItemType ==
+                                                  '1'
+                                              ? List.generate(
+                                                  medicineSearchModel
+                                                      .data[index]
+                                                      .itemPrice
+                                                      .length, (innerIndex) {
+                                                  itemTypes.add(
+                                                      medicineSearchModel
+                                                          .data[index]
+                                                          .itemPrice[innerIndex]
+                                                          .type);
+                                                })
+                                              : isItemTypeAvailable = '0';
 
-                                        medicineSearchModel
-                                                    .data[index].isItemType ==
-                                                '1'
-                                            ? List.generate(
-                                                medicineSearchModel
-                                                    .data[index]
-                                                    .itemPrice
-                                                    .length, (innerIndex) {
-                                                itemTypePrice.add(
-                                                    medicineSearchModel
-                                                        .data[index]
-                                                        .itemPrice[innerIndex]
-                                                        .price);
-                                              })
-                                            : isItemTypeAvailable = '0';
+                                          medicineSearchModel
+                                                      .data[index].isItemType ==
+                                                  '1'
+                                              ? List.generate(
+                                                  medicineSearchModel
+                                                      .data[index]
+                                                      .itemPrice
+                                                      .length, (innerIndex) {
+                                                  itemTypePrice.add(
+                                                      medicineSearchModel
+                                                          .data[index]
+                                                          .itemPrice[innerIndex]
+                                                          .price);
+                                                })
+                                              : isItemTypeAvailable = '0';
 
-                                        medicineSearchModel
-                                                    .data[index].isItemType ==
-                                                '1'
-                                            ? priceControllerEdit.text =
-                                                itemTypePrice[2]
-                                            : isItemTypeAvailable = '0';
+                                          medicineSearchModel
+                                                      .data[index].isItemType ==
+                                                  '1'
+                                              ? editPriceControllerEdit.text =
+                                                  itemTypePrice[2]
+                                              : isItemTypeAvailable = '0';
+                                        } else {
+                                          medicineSearchModel
+                                                      .data[index].isItemType ==
+                                                  '1'
+                                              ? isItemTypeAvailable = '1'
+                                              : isItemTypeAvailable = '0';
+
+                                          editProductId = medicineSearchModel
+                                              .data[index].id;
+                                          medicineSearchDetailData =
+                                              medicineSearchModel.data[index];
+                                          priceControllerEdit.text =
+                                              medicineSearchModel
+                                                  .data[index].salePrice;
+                                          log(medicineSearchModel
+                                              .data[index].salePrice
+                                              .toString());
+                                          productNameControllerEdit.text =
+                                              medicineSearchModel
+                                                  .data[index].name;
+                                          quantityControllerEdit.text = '1';
+
+                                          medicineSearchModel
+                                                      .data[index].isItemType ==
+                                                  '1'
+                                              ? List.generate(
+                                                  medicineSearchModel
+                                                      .data[index]
+                                                      .itemPrice
+                                                      .length, (innerIndex) {
+                                                  itemTypes.add(
+                                                      medicineSearchModel
+                                                          .data[index]
+                                                          .itemPrice[innerIndex]
+                                                          .type);
+                                                })
+                                              : isItemTypeAvailable = '0';
+
+                                          medicineSearchModel
+                                                      .data[index].isItemType ==
+                                                  '1'
+                                              ? List.generate(
+                                                  medicineSearchModel
+                                                      .data[index]
+                                                      .itemPrice
+                                                      .length, (innerIndex) {
+                                                  itemTypePrice.add(
+                                                      medicineSearchModel
+                                                          .data[index]
+                                                          .itemPrice[innerIndex]
+                                                          .price);
+                                                })
+                                              : isItemTypeAvailable = '0';
+
+                                          medicineSearchModel
+                                                      .data[index].isItemType ==
+                                                  '1'
+                                              ? priceControllerEdit.text =
+                                                  itemTypePrice[2]
+                                              : isItemTypeAvailable = '0';
+                                        }
 
                                         Get.back();
                                       },

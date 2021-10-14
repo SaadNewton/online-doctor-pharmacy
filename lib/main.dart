@@ -1,3 +1,4 @@
+//@dart=2.9
 import 'package:doctoworld_seller/Controllers/app_controller.dart';
 import 'package:doctoworld_seller/Controllers/loading_controller.dart';
 import 'package:doctoworld_seller/Controllers/model_controllers.dart';
@@ -9,6 +10,7 @@ import 'package:doctoworld_seller/lab_owner/Orders/all_lab_orders.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:get/get.dart';
@@ -39,6 +41,9 @@ Future<void> backgroundHandler(RemoteMessage message) async {
 void main() async {
   await GetStorage.init();
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.portraitUp],
+  );
   await Firebase.initializeApp();
   Get.put(LoaderController());
   Get.put(AppController());
@@ -59,7 +64,7 @@ class _MyAppState extends State<MyApp> {
     // TODO: implement initState
     FirebaseMessaging.instance.getInitialMessage().then((message) {
       String route, channelName, channelToken;
-      if (message!.data['channel'] != null) {
+      if (message.data['channel'] != null) {
         channelName = message.data['channel'];
         channelToken = message.data['channel_token'];
         Get.find<LoaderController>().agoraModelDefault.channelName =
@@ -81,8 +86,8 @@ class _MyAppState extends State<MyApp> {
       print(message.notification.toString());
 
       if (message.notification != null) {
-        print(message.notification!.body.toString());
-        print(message.notification!.title);
+        print(message.notification.body.toString());
+        print(message.notification.title);
       }
       String route, channelName, channelToken;
       if (message.data['channel'] != null) {

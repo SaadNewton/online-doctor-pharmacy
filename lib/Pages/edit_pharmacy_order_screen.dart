@@ -1,8 +1,10 @@
 // @dart=2.9
+
 import 'dart:developer';
 
 import 'package:doctoworld_seller/Components/entry_field.dart';
 import 'package:doctoworld_seller/Controllers/loading_controller.dart';
+import 'package:doctoworld_seller/Data/global_data.dart';
 import 'package:doctoworld_seller/Models/accepted_orders_model.dart';
 import 'package:doctoworld_seller/Pages/medicine_search_screen.dart';
 import 'package:doctoworld_seller/Repositories/edit_order_repo.dart';
@@ -11,12 +13,6 @@ import 'package:doctoworld_seller/Services/service_urls.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
-
-TextEditingController productNameControllerEdit = TextEditingController();
-int editProductId;
-TextEditingController priceControllerEdit = TextEditingController();
-TextEditingController quantityControllerEdit = TextEditingController();
-List items = [];
 
 class EditPharmacyOrderScreen extends StatefulWidget {
   final AcceptedOrderDetailData orderDetailData;
@@ -36,9 +32,12 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
   List<Order_product> medicineList = [];
   @override
   void initState() {
-    productNameControllerEdit.clear();
-    priceControllerEdit.clear();
-    quantityControllerEdit.clear();
+    isItemTypeAvailable = '0';
+    itemTypes = [];
+    editedIndex = null;
+    editNameControllerEdit.clear();
+    editPriceControllerEdit.clear();
+    editQuantityControllerEdit.clear();
     // TODO: implement initState
     medicineList = widget.orderDetailData.orderProduct;
     super.initState();
@@ -124,10 +123,12 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                           child: Column(
                                             children: [
                                               EntryField(
-                                                onTap: () => Get.to(
-                                                    MedicineSearchScreen()),
+                                                onTap: () =>
+                                                    Get.to(MedicineSearchScreen(
+                                                  fromEditOrder: true,
+                                                )),
                                                 controller:
-                                                    productNameControllerEdit,
+                                                    editNameControllerEdit,
                                                 hint: 'Medicine Name',
                                               ),
                                               Padding(
@@ -136,7 +137,7 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                                         0, 12, 0, 0),
                                                 child: EntryField(
                                                   controller:
-                                                      quantityControllerEdit,
+                                                      editQuantityControllerEdit,
                                                   textInputType:
                                                       TextInputType.number,
                                                   hint: 'Quantity',
@@ -158,7 +159,7 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                                     Expanded(
                                                         child: EntryField(
                                                       controller:
-                                                          priceControllerEdit,
+                                                          editPriceControllerEdit,
                                                       hint: 'Price',
                                                     )),
                                                     InkWell(
@@ -167,23 +168,43 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                                             .currentState
                                                             .validate()) {
                                                           setState(() {
+                                                            if (editedIndex ==
+                                                                null) {
+                                                              medicineList.add(Order_product(
+                                                                  qty:
+                                                                      editQuantityControllerEdit
+                                                                          .text,
+                                                                  name:
+                                                                      editNameControllerEdit
+                                                                          .text,
+                                                                  salePrice:
+                                                                      editPriceControllerEdit
+                                                                          .text));
+                                                              editNameControllerEdit
+                                                                  .clear();
+
+                                                              editPriceControllerEdit
+                                                                  .clear();
+                                                              editQuantityControllerEdit
+                                                                  .clear();
+                                                            }
                                                             medicineList[
                                                                         editedIndex]
                                                                     .qty =
-                                                                quantityControllerEdit
+                                                                editQuantityControllerEdit
                                                                     .text;
                                                             medicineList[
                                                                         editedIndex]
                                                                     .salePrice =
-                                                                priceControllerEdit
+                                                                editPriceControllerEdit
                                                                     .text;
                                                             editedIndex = null;
-                                                            productNameControllerEdit
+                                                            editNameControllerEdit
                                                                 .clear();
 
-                                                            priceControllerEdit
+                                                            editPriceControllerEdit
                                                                 .clear();
-                                                            quantityControllerEdit
+                                                            editQuantityControllerEdit
                                                                 .clear();
                                                           });
                                                         }
@@ -277,17 +298,17 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                                                 setState(() {
                                                                   editedIndex =
                                                                       index;
-                                                                  productNameControllerEdit
+                                                                  editNameControllerEdit
                                                                           .text =
                                                                       medicineList[
                                                                               index]
                                                                           .name;
-                                                                  quantityControllerEdit
+                                                                  editQuantityControllerEdit
                                                                           .text =
                                                                       medicineList[
                                                                               index]
                                                                           .qty;
-                                                                  priceControllerEdit
+                                                                  editPriceControllerEdit
                                                                       .text = medicineList[
                                                                           index]
                                                                       .salePrice;
@@ -359,14 +380,18 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                                         0, 15, 0, 0),
                                                 child: InkWell(
                                                   onTap: () {
+                                                    print(medicineList.length
+                                                        .toString());
                                                     int shippingCharges = 0;
                                                     double orderTotal = 0.0;
                                                     double subTotal = 0.0;
                                                     for (int i = 0;
-                                                        i < items.length;
+                                                        i < medicineList.length;
                                                         i++) {
-                                                      subTotal += items[i]
-                                                          ['retail_price'];
+                                                      subTotal +=
+                                                          double.tryParse(
+                                                              medicineList[i]
+                                                                  .salePrice);
                                                       orderTotal = subTotal;
                                                     }
                                                     if (subTotal < 500) {
@@ -377,7 +402,8 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                                     }
                                                     log('total ' +
                                                         orderTotal.toString());
-                                                    if (items.length >= 1) {
+                                                    if (medicineList.length >=
+                                                        1) {
                                                       Get.find<
                                                               LoaderController>()
                                                           .updateFormController(
@@ -391,7 +417,8 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                                             'order_id': widget
                                                                 .orderDetailData
                                                                 .id,
-                                                            'products': items,
+                                                            'products':
+                                                                medicineList,
                                                             'status':
                                                                 'in_review',
                                                             'sub_total':
@@ -418,7 +445,7 @@ class _EditPharmacyOrderScreenState extends State<EditPharmacyOrderScreen> {
                                                             .primaryColor),
                                                     child: Center(
                                                       child: Text(
-                                                        'Continue To Checkout',
+                                                        'Continue',
                                                         style: TextStyle(
                                                             color:
                                                                 Colors.white),
