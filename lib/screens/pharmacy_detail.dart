@@ -129,7 +129,7 @@ class _PharmacyDetailState extends State<PharmacyDetail> {
                                                   size: 28,
                                                 ),
                                                 Text(
-                                                  'Upload Image',
+                                                  'Upload Pharmacy Image',
                                                   textAlign: TextAlign.center,
                                                   style: TextStyle(
                                                       fontSize: 12,

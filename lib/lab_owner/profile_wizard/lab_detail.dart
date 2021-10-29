@@ -129,7 +129,7 @@ class _LabDetailState extends State<LabDetail> {
                                                   size: 28,
                                                 ),
                                                 Text(
-                                                  'Upload Image',
+                                                  'Upload Lab Image',
                                                   textAlign: TextAlign.center,
                                                   style: TextStyle(
                                                       fontSize: 12,
