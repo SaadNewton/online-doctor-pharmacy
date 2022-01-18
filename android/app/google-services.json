@@ -1,29 +1,28 @@
 {
   "project_info": {
-    "project_number": "274090461017",
-    "firebase_url": "https://online-doctor-18a73-default-rtdb.firebaseio.com",
-    "project_id": "online-doctor-18a73",
-    "storage_bucket": "online-doctor-18a73.appspot.com"
+    "project_number": "510657153381",
+    "project_id": "online-doctor-345f9",
+    "storage_bucket": "online-doctor-345f9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:274090461017:android:2ac1c6014a0c6ebda8ae48",
+        "mobilesdk_app_id": "1:510657153381:android:17f83a650e9c978658798c",
         "android_client_info": {
           "package_name": "com.CreCode.OnlineDoctor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "274090461017-i1rnni5gv4l6e1i23r9o386u9rogvsof.apps.googleusercontent.com",
+          "client_id": "510657153381-93e5791gevv2l1f30suppiqjko94282d.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.CreCode.OnlineDoctor",
-            "certificate_hash": "28519740b197e7bc9294f7f40f49971547ffc22f"
+            "certificate_hash": "f51a6a9904b08d49fdb9e098f4a55bf00ce12cbe"
           }
         },
         {
-          "client_id": "274090461017-ol30ipt83sls01dmql97ur2d1su2gss3.apps.googleusercontent.com",
+          "client_id": "510657153381-tm74nhhpcca21h9c62ugmdk368pigamt.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.CreCode.OnlineDoctor",
@@ -31,36 +30,21 @@
           }
         },
         {
-          "client_id": "274090461017-tt3eog4fot3iatpjfv1gvno49b2t17as.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.CreCode.OnlineDoctor",
-            "certificate_hash": "65cf71ad90870318fe53986e29f9f9314ce17446"
-          }
-        },
-        {
-          "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+          "client_id": "510657153381-if08atefq398gjifc5ieotfjfsumlrpt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC93hnUvYNFw4X4TReS3KTgLFUcRpIQRpg"
+          "current_key": "AIzaSyBGY3pop_M0hDyP2yjesjB6F3tlI7F4s-k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+              "client_id": "510657153381-if08atefq398gjifc5ieotfjfsumlrpt.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "274090461017-chib2crsto9cia0jdn8pfgca0s6a7f7a.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "pk.onlineDoctor.doctor"
-              }
             }
           ]
         }
@@ -68,22 +52,22 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:274090461017:android:cfd94d6fbff239a9a8ae48",
+        "mobilesdk_app_id": "1:510657153381:android:452fd39ba6cebd2858798c",
         "android_client_info": {
           "package_name": "pk.online_doctor.doctor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "274090461017-7lmd0vfu4u753q366m39pfumr3ljdi5h.apps.googleusercontent.com",
+          "client_id": "510657153381-hjn8mogs71ftraf6p37spjgcmabc2bl8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "pk.online_doctor.doctor",
-            "certificate_hash": "bcf80754dfc8d8cfb887a600eeac04f61c7837ba"
+            "certificate_hash": "a65fb9e6c2aac7f3fa498f7fb05ee249d0cf308a"
           }
         },
         {
-          "client_id": "274090461017-ottja3frcn2rd7dpjla9ep6llup48orb.apps.googleusercontent.com",
+          "client_id": "510657153381-us1dtra3lqik4lnu2gic158tv1hjo3nh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "pk.online_doctor.doctor",
@@ -91,44 +75,21 @@
           }
         },
         {
-          "client_id": "274090461017-qg4feqiu496mkjses709hepb8m2ul7b1.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "pk.online_doctor.doctor",
-            "certificate_hash": "50e62b18997d8cd98380830d5d8571c5fe4c6433"
-          }
-        },
-        {
-          "client_id": "274090461017-t74sghhfo61qe2cd058jdtcrqhb7q5hl.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "pk.online_doctor.doctor",
-            "certificate_hash": "9f9f736e8c88996840da4881b7bdc2e4e03000a2"
-          }
-        },
-        {
-          "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+          "client_id": "510657153381-if08atefq398gjifc5ieotfjfsumlrpt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC93hnUvYNFw4X4TReS3KTgLFUcRpIQRpg"
+          "current_key": "AIzaSyBGY3pop_M0hDyP2yjesjB6F3tlI7F4s-k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+              "client_id": "510657153381-if08atefq398gjifc5ieotfjfsumlrpt.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "274090461017-chib2crsto9cia0jdn8pfgca0s6a7f7a.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "pk.onlineDoctor.doctor"
-              }
             }
           ]
         }
@@ -136,59 +97,28 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:274090461017:android:58695598a2ac2eb5a8ae48",
+        "mobilesdk_app_id": "1:510657153381:android:99ed269c2161037658798c",
         "android_client_info": {
           "package_name": "pk.online_doctor.pharmacy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "274090461017-d9j0ij4e8jfdf9d91klpndvogt9j0bfv.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "pk.online_doctor.pharmacy",
-            "certificate_hash": "e02a4807e99a540d8bf55d989e811d8ff1b7e7b0"
-          }
-        },
-        {
-          "client_id": "274090461017-rdr40nks6sggoklmu8muobpv4l82g5rq.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "pk.online_doctor.pharmacy",
-            "certificate_hash": "559cff3be6c4e3db9572adcb66332a9ac7e4d296"
-          }
-        },
-        {
-          "client_id": "274090461017-tmqma90pm4shsl8fn5eojfcrp9r8d5m9.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "pk.online_doctor.pharmacy",
-            "certificate_hash": "8a33bd68fc67a99c3d69c05dc8ab1559eeac8f1f"
-          }
-        },
-        {
-          "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+          "client_id": "510657153381-if08atefq398gjifc5ieotfjfsumlrpt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC93hnUvYNFw4X4TReS3KTgLFUcRpIQRpg"
+          "current_key": "AIzaSyBGY3pop_M0hDyP2yjesjB6F3tlI7F4s-k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "274090461017-4b12230nt9f8r191pnr2gachcjknbf2r.apps.googleusercontent.com",
+              "client_id": "510657153381-if08atefq398gjifc5ieotfjfsumlrpt.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "274090461017-chib2crsto9cia0jdn8pfgca0s6a7f7a.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "pk.onlineDoctor.doctor"
-              }
             }
           ]
         }
