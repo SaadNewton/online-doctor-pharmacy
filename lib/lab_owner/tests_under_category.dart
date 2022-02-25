@@ -14,7 +14,7 @@ import 'package:doctoworld_seller/Services/service_urls.dart';
 import 'package:doctoworld_seller/lab_owner/single_test_details.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 import 'add_new_test.dart';
 

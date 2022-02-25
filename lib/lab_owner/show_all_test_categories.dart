@@ -14,7 +14,7 @@ import 'package:doctoworld_seller/Storage/local_Storage.dart';
 import 'package:doctoworld_seller/lab_owner/tests_under_category.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 import 'Orders/all_lab_orders.dart';
 import 'add_new_test_category.dart';

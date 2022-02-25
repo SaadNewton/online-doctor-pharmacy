@@ -8,7 +8,7 @@ import 'package:doctoworld_seller/repositories/forgot_password_email_repo.dart';
 import 'package:doctoworld_seller/services/post_method_call.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class PasswordEmail extends StatefulWidget {
   @override

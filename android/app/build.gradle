@@ -40,9 +40,6 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
-    lintOptions {
-        disable 'InvalidPackage'
-    }
 
     defaultConfig {
         applicationId "pk.online_doctor.pharmacy"
@@ -66,6 +63,9 @@ android {
             shrinkResources false
             signingConfig signingConfigs.release
         }
+    }
+    lint {
+        disable 'InvalidPackage'
     }
 
 //    buildTypes {

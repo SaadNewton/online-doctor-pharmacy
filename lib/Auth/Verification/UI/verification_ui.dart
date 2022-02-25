@@ -9,7 +9,7 @@ import 'package:doctoworld_seller/Locale/locale.dart';
 import 'package:doctoworld_seller/Services/opt_service.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class VerificationUI extends StatefulWidget {
   final getPhone;

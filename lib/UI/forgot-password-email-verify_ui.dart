@@ -8,7 +8,7 @@ import 'package:doctoworld_seller/repositories/forget_password_email_verify_repo
 import 'package:doctoworld_seller/services/post_method_call.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class ForgotPasswordEmailVerify extends StatefulWidget {
   @override
