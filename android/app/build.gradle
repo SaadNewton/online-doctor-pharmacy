@@ -67,6 +67,7 @@ android {
     lint {
         disable 'InvalidPackage'
     }
+    namespace 'pk.online_doctor.pharmacy'
 
 //    buildTypes {
 //        release {
